@@ -1,0 +1,36 @@
+{
+  "name": "javascript-basics",
+  "version": "1.0.0",
+  "description": "Exercises covering basic JavaScript concepts",
+  "scripts": {
+    "test": "jest -i --bail"
+  },
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MCRcodes/javascript-basics.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Manchester Codes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MCRcodes/javascript-basics/issues"
+  },
+  "homepage": "https://github.com/MCRcodes/javascript-basics#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.2.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
+  }
+}
