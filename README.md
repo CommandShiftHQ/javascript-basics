@@ -1,7 +1,7 @@
 # JavaScript Basics
 
 This repository is amined at helping you to get to grips with the basics of problem-solving in JavaScript.
-It will also introduce you to writing code against unit tests, as well as working with a linter.
+It will also introduce you to writing code against unit tests.
 
 The repository contains a load of test cases to solve the different challenges set in the week 2 walkthrough.
 
@@ -22,5 +22,7 @@ Then `cd` into the repository and run `npm install`.
 
 To run the tests, run `npm test`
 
-This will run the tests cases using **[Jest](https://facebook.github.io/jest/)**, stopping as soon as the first test fails.
+This will run the tests cases using **[Jest](https://facebook.github.io/jest/)**.
 
+You can also run an individual test suite.  
+For example to run just the arrays suite, you can run `npm test -- arrays`

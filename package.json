@@ -23,14 +23,12 @@
     "babel-core": "^6.26.0",
     "babel-jest": "^22.2.2",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^4.17.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
     "jest": "^22.2.2"
   },
   "jest": {
     "transform": {
       "^.+\\.js?$": "babel-jest"
     }
-  }
+  },
+  "dependencies": {}
 }
