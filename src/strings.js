@@ -1,23 +1,23 @@
 export const sayHello = (string) => {
-  // your code here
+  return  'Hello, ' + string + '!'// your code here
 };
 
 export const uppercase = (string) => {
-  // your code here
+  return string.toUpperCase()// your code here
 };
 
 export const lowercase = (string) => {
-  // your code here
+  return string.toLowerCase()// your code here
 };
 
 export const countCharacters = (string) => {
-  // your code here
+  return string.length// your code here
 };
 
 export const firstCharacter = (string) => {
-  // your code here
+  return string[0]// your code here
 };
 
 export const firstCharacters = (string, n) => {
-  // your code here
+  return string.substring(0, n)// your code here
 };
