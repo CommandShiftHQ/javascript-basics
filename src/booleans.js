@@ -1,45 +1,45 @@
 export const negate = (a) => {
-  // your code here
+  return !a;
 };
 
 export const both = (a, b) => {
-  // your code here
+  return (a && b);
 };
 
 export const either = (a, b) => {
-  // your code here
+  return a || b;
 };
 
 export const none = (a, b) => {
-  // your code here
+  return !a && !b;
 };
 
 export const one = (a, b) => {
-  // your code here
+  return (a && !b) || (!a && b);
 };
 
 export const truthiness = (a) => {
-  // your code here
+  return a === true;
 };
 
 export const isEqual = (a, b) => {
-  // your code here
+  return a == b;
 };
 
 export const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b// your code here
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b;
 };
 
 export const isOdd = (a) => {
-  // your code here
+  return Math.abs(a % 2) == 1;
 };
 
 export const isEven = (a) => {
-  // your code here
+  return a % 2 == 0;
 };
 
 export const isSquare = (a) => {
