@@ -1,37 +1,38 @@
 export const getNthElement = (index, array) => {
-  // your code here
+  return array[index]// your code here
 };
 
 export const arrayToCSVString = (array) => {
-  // your code here
+  return array.toString()// your code here
 };
 
 export const csvStringToArray = (string) => {
-  // your code here
+  return string.split(',')// your code here
 };
 
-export const addToArray = (array, element) => {
-  // your code here
+export const addToArray = (element, array) => {
+  array.push(element)// your code here
 };
 
-export const addToArray2 = (array, element) => {
-  // your code here
+export const addToArray2 = (element, array) => {
+return array2 = array.push([element]) // your code here
 };
 
 export const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index,[1]) // your code here
 };
 
 export const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.map(String)// your code here
 };
 
 export const uppercaseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(function(x){ return x.toUpperCase()})// your code here
 };
 
 export const reverseWordsInArray = (strings) => {
-  // your code here
+  strings.map(function(strings){ 
+    return strings.reverse()})// your code here
 };
 
 export const onlyEven = (numbers) => {
