@@ -1,59 +1,61 @@
 export const negate = (a) => {
-  // your code here
+  return !a// your code here
 };
 
 export const both = (a, b) => {
-  // your code here
+  return a && b// your code here
 };
 
 export const either = (a, b) => {
-  // your code here
+  return a || b// your code here
 };
 
 export const none = (a, b) => {
-  // your code here
+  return !a && !b// your code here
 };
 
 export const one = (a, b) => {
-  // your code here
+  return !a && b || a && !b// your code here
 };
 
 export const truthiness = (a) => {
-  // your code here
+  return Boolean (a)// your code here
 };
 
 export const isEqual = (a, b) => {
-  // your code here
+  return a === b// your code here
 };
 
 export const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b// your code here
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b// your code here
 };
 
 export const isOdd = (a) => {
-  // your code here
+  return a % 2 != 0// your code here
 };
 
 export const isEven = (a) => {
-  // your code here
+  return a % 2 === 0// your code here
 };
 
 export const isSquare = (a) => {
-  // your code here
-};
+  return Number.isInteger(Math.sqrt(a))// your code here
+};  
 
 export const startsWith = (char, string) => {
-  // your code here
+  return string.startsWith(char)// your code here
 };
 
 export const containsVowels = (string) => {
-  // your code here
+  let regex1 = RegExp(/[AEIOUaeiou]/)
+return regex1.test(string)//
 };
 
 export const isLowerCase = (string) => {
-  // your code here
+  let regex1 = RegExp(/[A-Z]/)
+  return !regex1.test(string)// your code here
 };
