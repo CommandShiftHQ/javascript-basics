@@ -1,21 +1,21 @@
 export const negate = (a) => {
-  // your code here
+  return !a;
 };
 
 export const both = (a, b) => {
-  // your code here
+  return (a && b);
 };
 
 export const either = (a, b) => {
-  // your code here
+  return (a || b)  || (b || a);
 };
 
 export const none = (a, b) => {
-  // your code here
+  return (!a && !b);
 };
 
 export const one = (a, b) => {
-  // your code here
+  return (!a && b) || (a && !b);
 };
 
 export const truthiness = (a) => {
