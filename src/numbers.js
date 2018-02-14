@@ -37,11 +37,9 @@ export const absolute = (a) => {
 };
 
 export const quotient = (a, b) => {
- if (a /b) {
-    
-  }(a / b)
+  return parseInt(a/b);
 };
 
 export const remainder = (a, b) => {
-  // your code here
+  return a % b;
 };
