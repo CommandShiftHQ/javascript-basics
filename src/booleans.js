@@ -19,23 +19,23 @@ export const one = (a, b) => {
 };
 
 export const truthiness = (a) => {
-  // your code here
+ return !(!a);
 };
 
 export const isEqual = (a, b) => {
-  // your code here
+  return a == b;
 };
 
 export const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b;
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b;
 };
 
 export const isOdd = (a) => {
-  // your code here
+  
 };
 
 export const isEven = (a) => {
