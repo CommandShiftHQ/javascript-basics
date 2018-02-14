@@ -42,6 +42,14 @@ export const none = (a, b) => {
 };
 
 export const one = (a, b) => {
+    if (a && b == true) {
+    // logical NOT
+    return false;
+    } else if (a || b == true) {
+    return true;
+    } else{
+    return false;
+    }
     // returns true if exactly one of the given values are true
     // expect(one(true, true)).toBe(false)
 };
