@@ -1,17 +1,43 @@
 export const negate = (a) => {
-  // your code here
+  if(a === true) {
+	return false
+} 
+else {
+	return true
+}
+
 };
 
 export const both = (a, b) => {
-  // your code here
+
+if(a && b) {
+	return true
+}
+else {
+	return false
+}  
+
 };
 
+
 export const either = (a, b) => {
-  // your code here
+if(a || b) {
+	return true
+}
+else {
+	return false
+}  
+
 };
 
 export const none = (a, b) => {
-  // your code here
+if(!a && !b) {
+	return true
+}
+else { 
+
+	return false
+}
 };
 
 export const one = (a, b) => {
