@@ -19,7 +19,7 @@ return array2 = array.push([element]) // your code here
 };
 
 export const removeNthElement = (index, array) => {
-  return array.splice(index,[1]) // your code here
+  return array.splice(index,1) // your code here
 };
 
 export const numbersToStrings = (numbers) => {
@@ -36,11 +36,14 @@ export const reverseWordsInArray = (strings) => {
 };
 
 export const onlyEven = (numbers) => {
-  // your code here
+  return numbers.filter(function(num){return num % 2 === 0
+  })  
+    // your code here
 };
 
 export const removeNthElement2 = (index, array) => {
-  // your code here
+   const newArray = array.slice(index,index + 1)
+   return newArray// your code here
 };
 
 export const elementsStartingWithAVowel = (strings) => {
