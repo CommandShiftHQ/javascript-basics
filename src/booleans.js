@@ -47,7 +47,7 @@ export const one = (a, b) => {
     return false;
     } else if (a || b == true) {
     return true;
-    } else{
+    } else {
     return false;
     }
     // returns true if exactly one of the given values are true
@@ -55,51 +55,98 @@ export const one = (a, b) => {
 };
 
 export const truthiness = (a) => {
+    return !(!a);
     // returns the truthiness of the given value
+    // (null, undefined, 0, "", NaN, false)
     // expect(truthiness('')).toBe(false)
 };
 
 export const isEqual = (a, b) => {
+    if (a === b) {
+    return true;
+    } else {
+    return false;
+    }
     // returns whether the two values are even
     // expect(isEqual(true, false)).toBe(false)
 };
 
 export const isGreaterThan = (a, b) => {
+    if (a > b) {
+    return true;
+    } else {
+    return false;
+    }
     // returns true if the first number is strictly greater than the second
     // expect(isGreaterThan(1, 2)).toBe(false)
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
+    if (a <= b) {
+    return true;
+    } else {
+    return false;
+    }
     // returns true if the first number is less than or equal to the second
     // expect(isLessThanOrEqualTo(1, 2)).toBe(true)
 };
 
 export const isOdd = (a) => {
+    if (a % 2 == 0) {
+    return false;
+    } else {
+    return true;
+    }
     // returns whether the number is odd
     // expect(isOdd(5)).toBe(true)
 };
 
 export const isEven = (a) => {
+    if (a % 2 == 0) {
+    return true;
+    } else {
+    return false;
+    }
     // returns whether the number is even
     // expect(isEven(5)).toBe(false)
 };
 
 export const isSquare = (a) => {
+    if (Math.sqrt(a) % 1 == 0) {
+    return true;
+    } else {
+    return false;
+    }
     // returns true if the number is a square
     // expect(isSquare(9)).toEqual(true)
 };
 
 export const startsWith = (char, string) => {
+    if (char == string[0]) {
+    return true;
+    } else {
+    return false;
+    }
     // returns whether the given string starts with the given character
     // expect(startsWith('a', 'aardvark')).toBe(true)
 };
 
 export const containsVowels = (string) => {
+    if (string.match(/[aeiouAEIOU]/)) {
+    return true;
+    } else {
+    return false;
+    }
     // returns whether the given string contains vowels
     // expect(containsVowels('cat')).toBe(true)
 };
 
 export const isLowerCase = (string) => {
+    if (string !== string.lowercase && string[0].toUpperCase() !== string[0]) {
+    return true;
+    } else {
+    return false;
+    }
     // it returns true if the given string is lowercase
     // expect(isLowerCase('abc')).toBe(true)
 };
