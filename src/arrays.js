@@ -52,8 +52,8 @@ export const removeNthElement2 = (index, array) => {
 };
 
 export const elementsStartingWithAVowel = (strings) => {
-  return numbers.filter(function(num){return num % 2 === 0
-  }) // your code here
+  return strings.filter(function(num){return num.match(/^[aeiouAEIOU]/)})
+   // your code here
 };
 
 export const removeSpaces = (string) => {
@@ -65,5 +65,5 @@ export const sumNumbers = (numbers) => {
 };
 
 export const sortByLastLetter = (strings) => {
-  // your code here
+  return strings.sort($a, $b)// your code here
 };
