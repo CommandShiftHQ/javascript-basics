@@ -42,8 +42,11 @@ export const onlyEven = (numbers) => {
 };
 
 export const removeNthElement2 = (index, array) => {
-   const newArray = array.slice(index,index + 1)
-   return newArray// your code here
+  const array2 = array.slice(0, index)
+  const array3 = array.slice((index + 1))
+  const array4 = array2.concat(array3)
+  return array4  
+  // your code here
 };
 
 export const elementsStartingWithAVowel = (strings) => {
@@ -55,7 +58,7 @@ export const removeSpaces = (string) => {
 };
 
 export const sumNumbers = (numbers) => {
-  // your code here
+  return numbers.reduce((total, next) => total + next)// your code here
 };
 
 export const sortByLastLetter = (strings) => {
