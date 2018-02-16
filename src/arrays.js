@@ -1,4 +1,5 @@
 export const getNthElement = (index, array) => {
+  if (index >= array.length){return array[index % array.length]} else  
   return array[index]// your code here
 };
 
@@ -15,7 +16,8 @@ export const addToArray = (element, array) => {
 };
 
 export const addToArray2 = (element, array) => {
-return array2 = array.push([element]) // your code here
+const array2 = array.concat(element) // your code here
+return array2
 };
 
 export const removeNthElement = (index, array) => {
@@ -31,8 +33,8 @@ export const uppercaseWordsInArray = (strings) => {
 };
 
 export const reverseWordsInArray = (strings) => {
-  strings.map(function(strings){ 
-    return strings.reverse()})// your code here
+      return strings.map(x => x.split('').reverse().join(''))
+  // your code here
 };
 
 export const onlyEven = (numbers) => {
@@ -50,11 +52,12 @@ export const removeNthElement2 = (index, array) => {
 };
 
 export const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  return numbers.filter(function(num){return num % 2 === 0
+  }) // your code here
 };
 
 export const removeSpaces = (string) => {
-  // your code here
+  return string.replace(/\s/g,'')// your code here
 };
 
 export const sumNumbers = (numbers) => {
