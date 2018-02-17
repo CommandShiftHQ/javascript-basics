@@ -38,7 +38,7 @@ export const findByName = (name, people) => {
 
 export const findHondas = (cars) => {
   let newArr = []
-  for(let i= 0; i <= cars.length; i++){
+  for(let i= 0; i < cars.length; i++){
    if (cars[i].manufacturer === 'Honda'){
    newArr.push(cars[i])
    }
@@ -57,5 +57,10 @@ export const averageAge = (people) => {
 };
 
 export const createTalkingPerson = (name, age) => {
-  // your code here
+  let person = {
+      name: name,
+      age: age
+      introduce: function(name){console.log('Hi ' + name +'Fred, my name is Bill and I am 40!')
+  }
+ }// your code here
 };
