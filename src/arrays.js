@@ -58,19 +58,34 @@ export const reverseWordsInArray = (strings) => {
 
 export const onlyEven = (numbers) => {
   //filters the array and only returns even numbers
-
+  return numbers.filter(function(val){return val%2===0})
 };
 
 export const removeNthElement2 = (index, array) => {
-  // your code here
+  // returns an array with the nth element removed, and does not mutate the original
+  return array.filter(e => e !== array[index]);
 };
 
 export const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  // returns elements starting with a vowel & is case insensitive
+
+  // create array
+  const startsWithVowel = [];
+
+  for (let i = 0; i < strings.length; i++){
+    //check if first letter is vowel: i = case insensitive
+    if (strings[i].charAt(0).match(/[aeiou]/i)){
+      // add to array
+      startsWithVowel.push(strings[i])
+    };
+
+  }    
+  return startsWithVowel; 
 };
 
 export const removeSpaces = (string) => {
-  // your code here
+  // returns the string with the space characters removed
+  
 };
 
 export const sumNumbers = (numbers) => {
