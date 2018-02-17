@@ -1,33 +1,40 @@
 export const getNthElement = (index, array) => {
-  // your code here
+  return array[index]
 };
 
 export const arrayToCSVString = (array) => {
-  // your code here
+  return array.join()
 };
 
 export const csvStringToArray = (string) => {
-  // your code here
+  return string.split(",")
 };
 
 export const addToArray = (array, element) => {
-  // your code here
+  
+return array.push(element)
+	
 };
 
 export const addToArray2 = (array, element) => {
-  // your code here
+  array.push(element)
+	return array
 };
 
 export const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index,1)
 };
 
 export const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.toString().split(",")
 };
 
 export const uppercaseWordsInArray = (strings) => {
-  // your code here
+let stringsUpper = []
+	for(let i = 0; i < strings.length; i++) {
+    	stringsUpper.push(strings[i].toUpperCase())
+    	}
+  return stringsUpper
 };
 
 export const reverseWordsInArray = (strings) => {
