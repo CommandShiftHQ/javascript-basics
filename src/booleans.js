@@ -154,7 +154,7 @@ else {
 };
 
 export const containsVowels = (string) => {
-  for (i=0; i < string.length; i++) {
+for (i=0; i < string.length; i++) {
   
   if(string[i] === "a" || string[i] === "e" || string[i] === "i" || string[i] === "o"
     || string[i] === "u" || string[i] === "A" || string[i] === "E" || string[i] === "I" || string[i] === "O"
@@ -167,8 +167,15 @@ export const containsVowels = (string) => {
 else {
 return false
 }
+  
 };
 
 export const isLowerCase = (string) => {
-  // your code here
+  if (string === string.toLowerCase()) {
+  return true
+}
+
+else {
+  return false
+}
 };
