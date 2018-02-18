@@ -44,7 +44,7 @@ describe('getProperty', () => {
 });
 
 describe('hasProperty', () => {
-  it ('checks whether and object has given property', () => { 
+  it ('checks whether object has given property', () => { 
     const fred = {
     name: 'Fred',
     age: 79,
