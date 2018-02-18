@@ -41,9 +41,9 @@ export const findHondas = (cars) => {
   for(let i= 0; i < cars.length; i++){
    if (cars[i].manufacturer === 'Honda'){
    newArr.push(cars[i])
-   }
+   }}
   return newArr
-  }// your code here
+  // your code here
 };
 
 export const averageAge = (people) => {
@@ -60,7 +60,7 @@ export const createTalkingPerson = (name, age) => {
   let person = {
       name: name,
       age: age
-      introduce: function(name){console.log('Hi ' + name +'Fred, my name is Bill and I am 40!')
-  }
+      //introduce: expect.any(Function)
+    }
  }// your code here
-};
+
