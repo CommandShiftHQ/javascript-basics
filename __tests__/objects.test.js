@@ -51,7 +51,7 @@ describe('hasProperty', () => {
   };
   expect(hasProperty('age', fred)).toBe(true);  
   expect(hasProperty('favouriteColour', fred)).toBe(false);
-});
+  });
 });
 
 describe('isOver65', () => {
