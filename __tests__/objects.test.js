@@ -44,13 +44,14 @@ describe('getProperty', () => {
 });
 
 describe('hasProperty', () => {
-  const fred = {
+  it ('checks whether and object has given property', () => { 
+    const fred = {
     name: 'Fred',
     age: 79,
   };
-
-  expect(hasProperty('age', fred)).toBe(true);
+  expect(hasProperty('age', fred)).toBe(true);  
   expect(hasProperty('favouriteColour', fred)).toBe(false);
+});
 });
 
 describe('isOver65', () => {
@@ -154,7 +155,7 @@ describe('averageAge', () => {
     const john = {
       name: 'John',
       age: 60,
-    };
+    };  
 
     const eric = {
       name: 'Eric',
