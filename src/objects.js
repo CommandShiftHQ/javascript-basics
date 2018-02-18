@@ -1,21 +1,35 @@
 export const createPerson = (name, age) => {
-  // your code here
+  return {
+    name : name,
+    age : age
+}
 };
 
 export const getName = (object) => {
-  // your code here
+  return object.name
 };
 
 export const getProperty = (property, object) => {
-  // your code here
+  return object[property]
 };
 
 export const hasProperty = (property, object) => {
-  // your code here
+
+if(object[property]) {
+  return true
+}
+  else {
+    return false
+}
 };
 
 export const isOver65 = (person) => {
-  // your code here
+  if(person.age > 65) {
+return true
+}
+else {
+return false
+}
 };
 
 export const getAges = (people) => {
