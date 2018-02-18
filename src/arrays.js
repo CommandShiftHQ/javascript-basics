@@ -85,13 +85,18 @@ export const elementsStartingWithAVowel = (strings) => {
 
 export const removeSpaces = (string) => {
   // returns the string with the space characters removed
-  
+  return string.replace(/\s+/g, '');
 };
 
 export const sumNumbers = (numbers) => {
-  // your code here
+  // returns the sum of the numbers in the array
+  return numbers.reduce((a, b) => a + b, 0);
 };
 
 export const sortByLastLetter = (strings) => {
-  // your code here
+  // sorts the string by the last character
+
+  // use the charCodeAt property, which returns a number associated with a character. Letters that occur later in the alphabet have a higher value
+  return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
+  
 };
