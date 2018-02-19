@@ -35,11 +35,11 @@ export const isLessThanOrEqualTo = (a, b) => {
 };
 
 export const isOdd = (a) => {
-  
+  return Math.abs(a % 2) == 1;
 };
 
 export const isEven = (a) => {
-  // your code here
+  return Math.abs(a % 2) == 0;
 };
 
 export const isSquare = (a) => {
