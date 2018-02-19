@@ -43,24 +43,20 @@ export const findHondas = (cars) => {
    newArr.push(cars[i])
    }}
   return newArr
-  // your code here
 };
 
 export const averageAge = (people) => {
   let newArr = []
   for(var i= 0; i < people.length; i++){
    newArr.push(people[i].age)
-   }
-   let total = newArr.reduce((total, next) => total + next)
-   return total / newArr.length
-  // your code here
+  }
+  let total = newArr.reduce((total, next) => total + next)
+  return total / newArr.length
 };
 
 export const createTalkingPerson = (name, age) => {
-  let person = {
-      name: name,
-      age: age
-      //introduce: expect.any(Function)
-    }
- }// your code here
-
+  /*let person = {
+      name: name
+      age: age}
+      */
+ }
