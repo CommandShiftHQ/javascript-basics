@@ -1,9 +1,9 @@
 export const getNthElement = (index, array) => {
-  // your code here
+  return array[index];
 };
 
 export const arrayToCSVString = (array) => {
-  // your code here
+  return array.join(',')
 };
 
 export const csvStringToArray = (string) => {
@@ -32,6 +32,7 @@ export const uppercaseWordsInArray = (strings) => {
 
 export const reverseWordsInArray = (strings) => {
   // your code here
+// 
 };
 
 export const onlyEven = (numbers) => {
@@ -42,9 +43,19 @@ export const removeNthElement2 = (index, array) => {
   // your code here
 };
 
-export const elementsStartingWithAVowel = (strings) => {
-  // your code here
+const startsWithAVowel = (gfrd) => {
+  const vowels = ['a','e','i','o','u']
+  const firstCharacter = gfrd.charAt(0);
+  return vowels.includes(firstCharacter)
 };
+
+export const elementsStartingWithAVowel = (strings) => {
+  return strings.filter((word) => {
+    return startsWithAVowel(word);
+  });
+}
+
+//.charAt(0) finds the character at position 0
 
 export const removeSpaces = (string) => {
   // your code here

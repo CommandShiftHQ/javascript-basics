@@ -39,15 +39,15 @@ export const isOdd = (a) => {
 };
 
 export const isEven = (a) => {
-  return Math.abs(a % 2) == 0;
+  return Math.abs(a % 2) === 0;
 };
 
 export const isSquare = (a) => {
-  // your code here
+  return Math.sqrt (a === true);
 };
 
 export const startsWith = (char, string) => {
-  // your code here
+  // your code here return true if the string starts with the same letter as char
 };
 
 export const containsVowels = (string) => {
