@@ -22,14 +22,15 @@ export const isOver65 = (person) => {
 export const getAges = (people) => {
   let agesArray = []
   for(var i = 0; i < people.length; i++) {
-    agesArray[i] = people[i].age}
-    return agesArray
+    agesArray[i] = people[i].age
+  }
+  return agesArray
 };
 
 export const findByName = (name, people) => {
   for(var i= 0, l = people.length; i< l; i++){
     if(people[i].name === name ){
-    return people[i]
+      return people[i]
     }
   }
 };
@@ -39,7 +40,8 @@ export const findHondas = (cars) => {
   for(let i= 0; i < cars.length; i++){
    if (cars[i].manufacturer === 'Honda'){
    newArr.push(cars[i])
-   }}
+   }
+  }
   return newArr
 };
 
@@ -53,12 +55,13 @@ export const averageAge = (people) => {
 };
 
 export const createTalkingPerson = (name, age) => {
-    let person = {
+  const createTalkingPerson = {
     name: name, 
     age: age,
-    introduce: function introduce(friend){
-      return 'Hi ' + friend; // + ', my name is ' name + ' and I am ' + age + '!'
-      } 
-    };
+    introduce: function intro(friend) {
+      return 'Hi ' + friend + ', my name is ' + name + ' and I am ' + age + '!';
+    }
   }
+  return createTalkingPerson
+};
  
