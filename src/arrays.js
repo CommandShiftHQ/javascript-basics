@@ -1,59 +1,77 @@
 export const getNthElement = (index, array) => {
-  // your code here
+  if (index >= array.length) {
+    return array[index % array.length]
+  } 
+  return array[index]
 };
 
 export const arrayToCSVString = (array) => {
-  // your code here
+  return array.toString()
 };
 
 export const csvStringToArray = (string) => {
-  // your code here
+  return string.split(',')
 };
 
-export const addToArray = (array, element) => {
-  // your code here
+export const addToArray = (element, array) => {
+  array.push(element)
 };
 
-export const addToArray2 = (array, element) => {
-  // your code here
+export const addToArray2 = (element, array) => {
+  const array2 = array.concat(element) 
+  return array2
 };
 
 export const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1)
 };
 
 export const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.map(number => number.toString())
 };
 
 export const uppercaseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(function(string) {
+    return string.toUpperCase() 
+  })
 };
 
 export const reverseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(string => string.split('').reverse().join(''))
 };
 
 export const onlyEven = (numbers) => {
-  // your code here
+  return numbers.filter(function(num) {
+    return num % 2 === 0
+  })  
 };
 
 export const removeNthElement2 = (index, array) => {
-  // your code here
+  const array2 = array.slice(0, index)
+  const array3 = array.slice((index + 1))
+  const array4 = array2.concat(array3)
+  return array4  
 };
 
 export const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  return strings.filter(function(string) {
+    return string.match(/^[aeiouAEIOU]/)
+  })
 };
 
 export const removeSpaces = (string) => {
-  // your code here
+  return string.replace(/\s/g,'')
 };
 
 export const sumNumbers = (numbers) => {
-  // your code here
+  return numbers.reduce((total, next) => total + next)
 };
 
 export const sortByLastLetter = (strings) => {
-  // your code here
+  function endComparator(a,b) {
+    if (a.slice(-1) < b.slice(-1)) return -1;
+    if (a.slice(-1) > b.slice(-1)) return 1;
+    return 0 
+  }
+  return strings.sort(endComparator)
 };
