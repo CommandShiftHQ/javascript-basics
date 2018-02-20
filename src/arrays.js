@@ -7,7 +7,7 @@ export const arrayToCSVString = (array) => {
 };
 
 export const csvStringToArray = (string) => {
-  // your code here
+  return string.split(',');
 };
 
 export const addToArray = (array, element) => {
