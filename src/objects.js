@@ -60,5 +60,13 @@ export const averageAge = (people) => {
 };
 
 export const createTalkingPerson = (name, age) => {
-  // your code here
+  // returns a person who can introduce themselves
+  // not sure if this is right? Should I be hardcoding Fred in there?
+  return {
+    name: name,
+    age: age,
+    introduce: function() {
+      return 'Hi Fred, my name is ' + name + ' and I am ' + age + '!';
+    }
+  };
 };
