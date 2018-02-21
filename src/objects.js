@@ -35,7 +35,7 @@ export const isOver65 = (person) => {
 
 export const getAges = (people) => {
   // returns the ages of each person in the array
-  //return people.filter()
+  return people.map(person => person.age);
 };
 
 export const findByName = (name, people) => {
@@ -45,10 +45,18 @@ export const findByName = (name, people) => {
 
 export const findHondas = (cars) => {
   // your code here
+  return cars.filter(car => car.manufacturer === 'Honda');
 };
 
 export const averageAge = (people) => {
-  // your code here
+
+  // call function ^ up there to get ages
+  let peopleAges = getAges(people);
+  //console.log(peopleAges);
+
+  // very tenuous grasp of reduce...sums them up? What have I even done here?
+  return peopleAges.reduce((total, age) => total + age) / people.length;
+
 };
 
 export const createTalkingPerson = (name, age) => {
