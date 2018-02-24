@@ -11,13 +11,13 @@ export const lowercase = (string) => {
 };
 
 export const countCharacters = (string) => {
-  // your code here
+  return string.length;
 };
 
 export const firstCharacter = (string) => {
-  // your code here
+  return string.charAt(0);
 };
 
 export const firstCharacters = (string, n) => {
-  // your code here
+  return string.slice (0, n);
 };
