@@ -11,7 +11,8 @@ export const csvStringToArray = (string) => {
 };
 
 export const addToArray = (array, element) => {
-  // your code here
+  (element.push(array));
+  return array
 };
 
 export const addToArray2 = (array, element) => {

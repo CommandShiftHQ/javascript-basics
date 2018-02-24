@@ -1,13 +1,13 @@
 export const sayHello = (string) => {
-  // your code here
+  return 'Hello, ' + string + '!';
 };
 
 export const uppercase = (string) => {
-  // your code here
+  return string.toUpperCase();
 };
 
 export const lowercase = (string) => {
-  // your code here
+  return string.toLowerCase();
 };
 
 export const countCharacters = (string) => {

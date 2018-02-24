@@ -43,17 +43,19 @@ export const isEven = (a) => {
 };
 
 export const isSquare = (a) => {
-  return Math.sqrt (a === true);
+  return Math.sqrt(a === true);
 };
 
 export const startsWith = (char, string) => {
-  // your code here return true if the string starts with the same letter as char
+  return string.charAt (0) === char;
 };
 
 export const containsVowels = (string) => {
-  // your code here
+  (string.split (',')).
+
+  return;
 };
 
 export const isLowerCase = (string) => {
-  // your code here
+  return string === o
 };
