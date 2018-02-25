@@ -91,5 +91,11 @@ return averageAge
 };
 
 export const createTalkingPerson = (name, age) => {
-  return `Hi Fred, my name is $name and I am $age!` 
+ const bill = {
+  name: name,
+  age: age,
+  introduce: (person) => {return "Hi " + person + ", my name is " + bill.name + " and I am " + bill.age +"!";}
+ }
+
+return bill
 };
