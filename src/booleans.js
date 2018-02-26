@@ -43,7 +43,7 @@ export const isEven = (a) => {
 };
 
 export const isSquare = (a) => {
-  return Math.sqrt(a === true);
+  return (a === 0) || (a > 0 && (a % Math.sqrt(a)) === 0);
 };
 
 export const startsWith = (char, string) => {
@@ -51,11 +51,9 @@ export const startsWith = (char, string) => {
 };
 
 export const containsVowels = (string) => {
-  (string.split (',')).
-
-  return;
+  return /[aeiou]/.test(string.toLowerCase());
 };
 
 export const isLowerCase = (string) => {
-  return string === o
+  return string.toLowerCase() === string;
 };
