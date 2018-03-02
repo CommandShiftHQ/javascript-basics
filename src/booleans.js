@@ -1,59 +1,66 @@
 export const negate = (a) => {
-  // your code here
+  return !a;
 };
 
 export const both = (a, b) => {
-  // your code here
+  return (a && b);
 };
 
 export const either = (a, b) => {
-  // your code here
+  return (a || b)  || (b || a);
 };
 
 export const none = (a, b) => {
-  // your code here
+  return (!a && !b);
 };
 
 export const one = (a, b) => {
-  // your code here
+  return (!a && b) || (a && !b);
 };
 
 export const truthiness = (a) => {
-  // your code here
+ return !(!a);
 };
 
 export const isEqual = (a, b) => {
-  // your code here
+  return a == b;
 };
 
 export const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b;
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b;
 };
 
 export const isOdd = (a) => {
-  // your code here
+  return a % 2 == !0;
 };
 
 export const isEven = (a) => {
-  // your code here
+  // modulus operator % finds the remainder of division. If there is no remainder after division by 2, a number is even
+  return a % 2 == 0;
 };
 
 export const isSquare = (a) => {
-  // your code here
+  // Check if sqrt is complete number i.e. integer
+  return Math.sqrt(a) % 1 === 0;
 };
 
 export const startsWith = (char, string) => {
-  // your code here
+  return string.substr(0,1) == char;
 };
 
 export const containsVowels = (string) => {
-  // your code here
+  /* This just matches against the regex (g makes it search the whole string, 
+     i makes it case-insensitive) and returns true if the string contains vowels. 
+     We check for null incase there are no matches (ie no vowels), and return false in that case.
+  */
+  var m = string.match(/[aeiou]/gi);
+  return m === null ? false : true;
 };
 
 export const isLowerCase = (string) => {
-  // your code here
+  return string === string.toLowerCase();
 };

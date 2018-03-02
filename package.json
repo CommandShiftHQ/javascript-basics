@@ -30,5 +30,7 @@
       "^.+\\.js?$": "babel-jest"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint": "^4.17.0"
+  }
 }
