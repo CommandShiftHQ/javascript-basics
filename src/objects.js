@@ -1,39 +1,101 @@
 export const createPerson = (name, age) => {
-  // your code here
+  return {
+    name : name,
+    age : age,
+    
+}
 };
 
 export const getName = (object) => {
-  // your code here
+  return object.name
 };
 
 export const getProperty = (property, object) => {
-  // your code here
+  return object[property]
 };
 
 export const hasProperty = (property, object) => {
-  // your code here
+
+if(object[property]) {
+  return true
+}
+  else {
+    return false
+}
 };
 
 export const isOver65 = (person) => {
-  // your code here
+  if(person.age > 65) {
+return true
+}
+else {
+return false
+}
 };
 
 export const getAges = (people) => {
-  // your code here
+let agesArr = []  
+for (let i = 0; i < people.length; i++ )
+ {
+
+	agesArr.push(people[i].age)
+
+ }
+
+	return agesArr
 };
 
 export const findByName = (name, people) => {
-  // your code here
+  
+for (let i = 0; i < people.length; i++ )
+ {
+   if(people[i].name === name) {
+
+	return people[i]
+	break
+ 
+   }
+ }
 };
 
 export const findHondas = (cars) => {
-  // your code here
+  let carsArr = []
+
+for (let i = 0; i < cars.length; i++ )
+ {
+   if(cars[i].manufacturer === 'Honda') {
+
+	carsArr.push(cars[i])
+ 
+   }
+ }
+
+return carsArr
 };
 
 export const averageAge = (people) => {
-  // your code here
+
+let agesArr = []
+	for (let i = 0; i < people.length; i++ )
+ {
+   agesArr.push(people[i].age)
+ 
+   }
+let averageAge = 0
+
+    averageAge += agesArr.reduce((a, b) => a + b)
+    / agesArr.length;
+
+return averageAge
+
 };
 
 export const createTalkingPerson = (name, age) => {
-  // your code here
+ const bill = {
+  name: name,
+  age: age,
+  introduce: (person) => {return "Hi " + person + ", my name is " + bill.name + " and I am " + bill.age +"!";}
+ }
+
+return bill
 };
