@@ -24,7 +24,7 @@ describe('uppercase', () => {
 });
 
 describe('lowercase', () => {
-  it('returns the uppercased string', () => {
+  it('returns the lowercased string', () => {
     expect(lowercase('ABC')).toEqual('abc');
     expect(lowercase('DEF')).toEqual('def');
     expect(lowercase('GHI')).toEqual('ghi');
