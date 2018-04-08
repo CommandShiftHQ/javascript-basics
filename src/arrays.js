@@ -10,11 +10,11 @@ export const csvStringToArray = (string) => {
   // your code here
 };
 
-export const addToArray = (array, element) => {
+export const addToArray = (element, array) => {
   // your code here
 };
 
-export const addToArray2 = (array, element) => {
+export const addToArray2 = (element, array) => {
   // your code here
 };
 
