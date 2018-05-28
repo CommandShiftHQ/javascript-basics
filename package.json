@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/MCRcodes/javascript-basics#readme",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.2.2",
-    "babel-preset-env": "^1.6.1",
-    "jest": "^22.2.2"
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.4",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^22.4.4"
   },
   "jest": {
     "transform": {
