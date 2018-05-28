@@ -1,4 +1,4 @@
-import {
+const {
   getNthElement,
   arrayToCSVString,
   csvStringToArray,
@@ -14,7 +14,7 @@ import {
   removeSpaces,
   sumNumbers,
   sortByLastLetter,
-} from '../src/arrays';
+} = require('../src/arrays');
 
 describe('getNthElement', () => {
   const array = ['cat', 'dog', 'elephant', 'fox'];

@@ -1,59 +1,77 @@
-export const negate = (a) => {
+const negate = (a) => {
   // your code here
 };
 
-export const both = (a, b) => {
+const both = (a, b) => {
   // your code here
 };
 
-export const either = (a, b) => {
+const either = (a, b) => {
   // your code here
 };
 
-export const none = (a, b) => {
+const none = (a, b) => {
   // your code here
 };
 
-export const one = (a, b) => {
+const one = (a, b) => {
   // your code here
 };
 
-export const truthiness = (a) => {
+const truthiness = (a) => {
   // your code here
 };
 
-export const isEqual = (a, b) => {
+const isEqual = (a, b) => {
   // your code here
 };
 
-export const isGreaterThan = (a, b) => {
+const isGreaterThan = (a, b) => {
   // your code here
 };
 
-export const isLessThanOrEqualTo = (a, b) => {
+const isLessThanOrEqualTo = (a, b) => {
   // your code here
 };
 
-export const isOdd = (a) => {
+const isOdd = (a) => {
   // your code here
 };
 
-export const isEven = (a) => {
+const isEven = (a) => {
   // your code here
 };
 
-export const isSquare = (a) => {
+const isSquare = (a) => {
   // your code here
 };
 
-export const startsWith = (char, string) => {
+const startsWith = (char, string) => {
   // your code here
 };
 
-export const containsVowels = (string) => {
+const containsVowels = (string) => {
   // your code here
 };
 
-export const isLowerCase = (string) => {
+const isLowerCase = (string) => {
   // your code here
 };
+
+module.exports = {
+  negate,
+  both,
+  either,
+  none,
+  one,
+  truthiness,
+  isEqual,
+  isGreaterThan,
+  isLessThanOrEqualTo,
+  isOdd,
+  isEven,
+  isSquare,
+  startsWith,
+  containsVowels,
+  isLowerCase
+}

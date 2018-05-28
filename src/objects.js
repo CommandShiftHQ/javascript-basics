@@ -1,39 +1,52 @@
-export const createPerson = (name, age) => {
+const createPerson = (name, age) => {
   // your code here
 };
 
-export const getName = (object) => {
+const getName = (object) => {
   // your code here
 };
 
-export const getProperty = (property, object) => {
+const getProperty = (property, object) => {
   // your code here
 };
 
-export const hasProperty = (property, object) => {
+const hasProperty = (property, object) => {
   // your code here
 };
 
-export const isOver65 = (person) => {
+const isOver65 = (person) => {
   // your code here
 };
 
-export const getAges = (people) => {
+const getAges = (people) => {
   // your code here
 };
 
-export const findByName = (name, people) => {
+const findByName = (name, people) => {
   // your code here
 };
 
-export const findHondas = (cars) => {
+const findHondas = (cars) => {
   // your code here
 };
 
-export const averageAge = (people) => {
+const averageAge = (people) => {
   // your code here
 };
 
-export const createTalkingPerson = (name, age) => {
+const createTalkingPerson = (name, age) => {
   // your code here
 };
+
+module.exports = {
+  createPerson,
+  getName,
+  getProperty,
+  hasProperty,
+  isOver65,
+  getAges,
+  findByName,
+  findHondas,
+  averageAge,
+  createTalkingPerson
+}

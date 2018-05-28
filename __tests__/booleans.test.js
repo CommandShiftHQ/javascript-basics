@@ -1,4 +1,4 @@
-import {
+const {
   negate,
   both,
   either,
@@ -14,7 +14,7 @@ import {
   startsWith,
   containsVowels,
   isLowerCase,
-} from '../src/booleans';
+} = require('../src/booleans');
 
 describe('negate', () => {
   it('returns the opposite of the passed boolean value', () => {

@@ -1,11 +1,11 @@
-import {
+const {
   sayHello,
   uppercase,
   lowercase,
   countCharacters,
   firstCharacter,
   firstCharacters,
-} from '../src/strings';
+} = require('../src/strings');
 
 describe('sayHello', () => {
   it('returns Hello with the given string!', () => {

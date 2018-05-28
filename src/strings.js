@@ -1,23 +1,32 @@
-export const sayHello = (string) => {
+const sayHello = (string) => {
   // your code here
 };
 
-export const uppercase = (string) => {
+const uppercase = (string) => {
   // your code here
 };
 
-export const lowercase = (string) => {
+const lowercase = (string) => {
   // your code here
 };
 
-export const countCharacters = (string) => {
+const countCharacters = (string) => {
   // your code here
 };
 
-export const firstCharacter = (string) => {
+const firstCharacter = (string) => {
   // your code here
 };
 
-export const firstCharacters = (string, n) => {
+const firstCharacters = (string, n) => {
   // your code here
 };
+
+module.exports = {
+  sayHello,
+  uppercase,
+  lowercase,
+  countCharacters,
+  firstCharacter,
+  firstCharacters
+}

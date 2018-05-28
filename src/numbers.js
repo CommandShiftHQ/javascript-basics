@@ -1,43 +1,57 @@
-export const add = (a, b) => {
+const add = (a, b) => {
   // your code here
 };
 
-export const subtract = (a, b) => {
+const subtract = (a, b) => {
   // your code here
 };
 
-export const multiply = (a, b) => {
+const multiply = (a, b) => {
   // your code here
 };
 
-export const divide = (a, b) => {
+const divide = (a, b) => {
   // your code here
 };
 
-export const power = (a, b) => {
+const power = (a, b) => {
   // your code here
 };
 
-export const round = (a) => {
+const round = (a) => {
   // your code here
 };
 
-export const roundUp = (a) => {
+const roundUp = (a) => {
   // your code here
 };
 
-export const roundDown = (a) => {
+const roundDown = (a) => {
   // your code here
 };
 
-export const absolute = (a) => {
+const absolute = (a) => {
   // your code here
 };
 
-export const quotient = (a, b) => {
+const quotient = (a, b) => {
   // your code here
 };
 
-export const remainder = (a, b) => {
+const remainder = (a, b) => {
   // your code here
 };
+
+module.exports = {
+  add,
+  subtract,
+  multiply,
+  divide,
+  power,
+  round,
+  roundUp,
+  roundDown,
+  absolute,
+  quotient,
+  remainder
+}

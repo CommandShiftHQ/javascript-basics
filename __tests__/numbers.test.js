@@ -1,4 +1,4 @@
-import {
+const {
   add,
   subtract,
   multiply,
@@ -10,7 +10,7 @@ import {
   absolute,
   quotient,
   remainder,
-} from '../src/numbers';
+} = require('../src/numbers');
 
 describe('add', () => {
   it('adds the two numbers together', () => {
