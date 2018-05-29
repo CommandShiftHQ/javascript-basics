@@ -1,5 +1,5 @@
 const add = (a, b) => {
-  // your code here
+  return a + b;
 };
 
 const subtract = (a, b) => {
