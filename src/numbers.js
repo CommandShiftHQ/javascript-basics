@@ -3,19 +3,19 @@ const add = (a, b) => {
 };
 
 const subtract = (a, b) => {
-  // your code here
+  return a - b;
 };
 
 const multiply = (a, b) => {
-  // your code here
+  return a * b;
 };
 
 const divide = (a, b) => {
-  // your code here
+ return a / b;
 };
 
 const power = (a, b) => {
-  // your code here
+  return a ** b;
 };
 
 const round = (a) => {
