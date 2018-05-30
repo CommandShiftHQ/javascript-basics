@@ -15,11 +15,11 @@ const countCharacters = (string) => {
 };
 
 const firstCharacter = (string) => {
-  return string.CharAt(1);
+  return string.substr(0, 1);
 };
 
 const firstCharacters = (string, n) => {
-  return string.startsWith(n);
+  return string.substr(-20, 4);
 };
 
 module.exports = {
