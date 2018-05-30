@@ -1,25 +1,40 @@
 const negate = (a) => {
-  // your code here
+  return !a
 };
 
 const both = (a, b) => {
-  // your code here
+  if (a && b === true)
+    return true
+  else
+    return false
 };
 
 const either = (a, b) => {
-  // your code here
+  if (a || b === true)
+    return true
+  else
+    return false
 };
 
 const none = (a, b) => {
-  // your code here
+  if (a || b === true)
+    return !true
+  else
+    return !false
 };
 
 const one = (a, b) => {
-  // your code here
+  if (a && b === true)
+    return true
+  else
+    return false
 };
 
 const truthiness = (a) => {
-  // your code here
+  if (a)
+    return true
+  else
+    return false
 };
 
 const isEqual = (a, b) => {
