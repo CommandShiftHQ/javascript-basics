@@ -1,9 +1,9 @@
 const negate = (a) => {
-  // your code here
+  return 1 > a
 };
 
 const both = (a, b) => {
-  // your code here
+  return 1 < a && b
 };
 
 const either = (a, b) => {
