@@ -11,15 +11,15 @@ const lowercase = (string) => {
 };
 
 const countCharacters = (string) => {
-  // your code here
+  return string.length;
 };
 
 const firstCharacter = (string) => {
-  // your code here
+  return string.CharAt(1);
 };
 
 const firstCharacters = (string, n) => {
-  // your code here
+  return string.startsWith(n);
 };
 
 module.exports = {
