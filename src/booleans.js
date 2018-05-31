@@ -15,11 +15,11 @@ return !(a || b);
 };
 
 const one = (a, b) => {
-  // your code here
+  return !(a == b);
 };
 
 const truthiness = (a) => {
-  
+  return ;
 };
 
 const isEqual = (a, b) => {
