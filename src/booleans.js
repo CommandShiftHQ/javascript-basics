@@ -1,17 +1,17 @@
 const negate = (a) => {
-  // your code here
+  return !a;
 };
 
 const both = (a, b) => {
-  // your code here
+  return (a && b);
 };
 
 const either = (a, b) => {
-  // your code here
+  return (a || b);
 };
 
 const none = (a, b) => {
-  // your code here
+  return (a <= b);
 };
 
 const one = (a, b) => {
@@ -19,7 +19,7 @@ const one = (a, b) => {
 };
 
 const truthiness = (a) => {
-  // your code here
+  
 };
 
 const isEqual = (a, b) => {
