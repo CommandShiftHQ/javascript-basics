@@ -24,10 +24,7 @@ const none = (a, b) => {
 };
 
 const one = (a, b) => {
-  if (a && b === true)
-    return true
-  else
-    return false
+  return a !== b
 };
 
 const truthiness = (a) => {
@@ -38,39 +35,57 @@ const truthiness = (a) => {
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  if (a == b)
+    return true
+  else
+    return false
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  if (a > b)
+    return true
+  else
+    return false
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  if (a <= b)
+    return true
+  else
+    return false
 };
 
 const isOdd = (a) => {
-  // your code here
+  if (a % 2 !== 0)
+    return true
+  else
+    return false
 };
 
 const isEven = (a) => {
-  // your code here
+  if (a % 2 === 0)
+    return true
+  else
+    return false
 };
 
 const isSquare = (a) => {
-  // your code here
+  return Math.sqrt(a) % 1 === 0
 };
 
+// 1. sqrt of number
+// 2. evaluate if number is integer
+
 const startsWith = (char, string) => {
-  // your code here
+   return string[0] == char 
 };
 
 const containsVowels = (string) => {
-  // your code here
+    return /([aeiou])/i.test(string)
 };
 
 const isLowerCase = (string) => {
-  // your code here
+    return string.toLowerCase() === string
 };
 
 module.exports = {
