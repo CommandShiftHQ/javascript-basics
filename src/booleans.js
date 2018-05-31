@@ -27,11 +27,11 @@ const isEqual = (a, b) => {
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b;
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b;
 };
 
 const isOdd = (a) => {
