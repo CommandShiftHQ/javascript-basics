@@ -19,11 +19,11 @@ const one = (a, b) => {
 };
 
 const truthiness = (a) => {
-  return ;
+  return !!(a);
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  return (a == b);
 };
 
 const isGreaterThan = (a, b) => {
