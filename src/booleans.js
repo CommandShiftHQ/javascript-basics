@@ -1,77 +1,133 @@
 const negate = (a) => {
-  // your code here
-};
+    if (a === true) {
+        return false
+    } else {
+        return true
+    }
+}; // your code here
 
 const both = (a, b) => {
-  // your code here
+    if (a === true && b === true) {
+        return true
+    } else {
+        return false
+    } // your code here
 };
 
 const either = (a, b) => {
-  // your code here
+    if (a === true || b === true) {
+        return true
+    } else {
+        return false
+    }
+    // your code here
 };
 
 const none = (a, b) => {
-  // your code here
+    if (a !== true && b !== true) {
+        return true
+    } else {
+        return false
+    }
+    // your code here
 };
 
 const one = (a, b) => {
-  // your code here
+    if ((a === true && b !== true) || (a !== true && b === true)) {
+        return true
+    } else {
+        return false
+    }
+    // your code here
 };
 
 const truthiness = (a) => {
-  // your code here
+    return Boolean(a)
 };
 
 const isEqual = (a, b) => {
-  // your code here
+    return Boolean(a === b)
+        // your code here
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+    return Boolean(a > b)
+        // your code here
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+    return Boolean(a <= b)
+        // your code here
 };
 
 const isOdd = (a) => {
-  // your code here
-};
+        if (a === 0 || a % 2 === 0) {
+            return false
+        } else {
+            return true
+        }
+    }
+    // your code here
 
 const isEven = (a) => {
-  // your code here
+    if (a === 0 || a % 2 === 0) {
+        return true
+    } else {
+        return false
+    }
+    // your code here
 };
 
 const isSquare = (a) => {
-  // your code here
+    if (Number.isInteger(Math.sqrt(a)) && Math.sqrt(a) >= 0) {
+        return true
+    } else {
+        return false
+    }
+    // your code here
 };
 
 const startsWith = (char, string) => {
-  // your code here
+    if (char === string.charAt(0)) {
+        return true
+    } else {
+        return false
+    }
+    // your code here
 };
 
 const containsVowels = (string) => {
-  // your code here
+
+    if (string.match(/[aeiou]/i)) {
+        return true
+    } else {
+        return false
+    }
+    //your code here
 };
 
 const isLowerCase = (string) => {
-  // your code here
+    if (string === string.toLowerCase(string)) {
+        return true
+    } else {
+        return false
+    }
 };
 
 module.exports = {
-  negate,
-  both,
-  either,
-  none,
-  one,
-  truthiness,
-  isEqual,
-  isGreaterThan,
-  isLessThanOrEqualTo,
-  isOdd,
-  isEven,
-  isSquare,
-  startsWith,
-  containsVowels,
-  isLowerCase
+    negate,
+    both,
+    either,
+    none,
+    one,
+    truthiness,
+    isEqual,
+    isGreaterThan,
+    isLessThanOrEqualTo,
+    isOdd,
+    isEven,
+    isSquare,
+    startsWith,
+    containsVowels,
+    isLowerCase
 }
