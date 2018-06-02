@@ -34,11 +34,7 @@ const isLessThanOrEqualTo = (a, b) => {
   return a <= b;
 };
 
-const isOdd = (a) => {
-  // your code here
-};
-
-const isEven = (a) => {
+const isOdd = (a) => {const isEven = (a) => {
   // your code here
 };
 
