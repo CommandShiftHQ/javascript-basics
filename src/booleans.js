@@ -34,16 +34,20 @@ const isLessThanOrEqualTo = (a, b) => {
   return a <= b;
 };
 
-const isOdd = (a) => {const isEven = (a) => {
-  // your code here
+const isOdd = (a) => {
+  return a % 2 == 1;
+};
+
+  const isEven = (a) => {
+  return a % 2 == 0;
 };
 
 const isSquare = (a) => {
-  // your code here
+  return Math.sqrt(a) % 1 === 0;
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  return 
 };
 
 const containsVowels = (string) => {
