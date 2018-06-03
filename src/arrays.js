@@ -37,19 +37,19 @@ const reverseWordsInArray = (strings) => {
 };
 
 const onlyEven = (numbers) => {
-    const evenNumbers = onlyEven.filter(number => number % 2 );
+    return numbers.filter(number => number % 2 === 0 )
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+    return array.map(strings => strings.splice(index, 1));
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
+    return strings.filter(vowels => vowels.find('a','e','i','o','u'))
 };
 
 const removeSpaces = (string) => {
-  // your code here
+    return string.trim();
 };
 
 const sumNumbers = (numbers) => {
