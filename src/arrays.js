@@ -1,77 +1,94 @@
 const getNthElement = (index, array) => {
-  // your code here
+    if (index < array.length) {
+        return array[index]
+    } else {
+        return array[index - array.length]
+    }
+    // your code here
 };
 
 const arrayToCSVString = (array) => {
-  // your code here
+    return array.toString(array)
+        // your code here
 };
 
 const csvStringToArray = (string) => {
-  // your code here
+    return string.split(',') // your code here
 };
 
 const addToArray = (element, array) => {
-  // your code here
+    array.push(element) // your code here
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+    return array.concat(element) // your code here
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+    array.splice(index, 1)
 };
 
 const numbersToStrings = (numbers) => {
-  // your code here
+    return numbers.toString(numbers).split(',')
+        // your code here
 };
 
 const uppercaseWordsInArray = (strings) => {
-  // your code here
+    return strings.map(a => a.toUpperCase())
 };
 
 const reverseWordsInArray = (strings) => {
-  // your code here
+    return strings.map(a => a.split("").reverse().join(""))
 };
 
 const onlyEven = (numbers) => {
-  // your code here
+    return numbers.filter(num => num = 0 || num % 2 === 0)
+        // your code here
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+    const array2 = [...array]
+    array2.splice(index, 1)
+    return array2
+
+    // your code here
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
+    return strings.filter(a => a.charAt(0).match(/[aeiou]/i))
+        // your code here
 };
 
 const removeSpaces = (string) => {
-  // your code here
+    return string.replace(/\s/g, '') // your code here
 };
 
 const sumNumbers = (numbers) => {
-  // your code here
+    return numbers.reduce((a, b) => a + b, 0)
 };
 
 const sortByLastLetter = (strings) => {
-  // your code here
+    const reverse = strings.map(a => a.split("").reverse().join(""))
+    const orderedReverse = reverse.sort()
+    const finalReverseList = orderedReverse.map(a => a.split("").reverse().join(""))
+    return finalReverseList
+
 };
 
 module.exports = {
-  getNthElement,
-  arrayToCSVString,
-  csvStringToArray,
-  addToArray,
-  addToArray2,
-  removeNthElement,
-  numbersToStrings,
-  uppercaseWordsInArray,
-  reverseWordsInArray,
-  onlyEven,
-  removeNthElement2,
-  elementsStartingWithAVowel,
-  removeSpaces,
-  sumNumbers,
-  sortByLastLetter
+    getNthElement,
+    arrayToCSVString,
+    csvStringToArray,
+    addToArray,
+    addToArray2,
+    removeNthElement,
+    numbersToStrings,
+    uppercaseWordsInArray,
+    reverseWordsInArray,
+    onlyEven,
+    removeNthElement2,
+    elementsStartingWithAVowel,
+    removeSpaces,
+    sumNumbers,
+    sortByLastLetter
 }
