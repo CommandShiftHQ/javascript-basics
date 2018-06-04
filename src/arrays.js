@@ -1,61 +1,67 @@
 const getNthElement = (index, array) => {
-  // your code here
+    return array[index % array.length];
 };
 
 const arrayToCSVString = (array) => {
-  // your code here
+  return array.toString();
 };
 
 const csvStringToArray = (string) => {
-  // your code here
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+ const array2 = array.concat(element);
+  return array2;
 };
 
+
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.toString().split(',')
 };
 
 const uppercaseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(string => string.toUpperCase());
 };
 
-const reverseWordsInArray = (strings) => {
-  // your code here
-};
+const reverseWordsInArray = strings =>
+  strings.map(string => string.split('').reverse().join(''));
 
-const onlyEven = (numbers) => {
-  // your code here
-};
+const onlyEven = numbers =>
+  numbers.filter(number => number % 2 === 0);
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.filter((element, elementIndex) =>
+    elementIndex !== index);
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  return strings.filter(string => /(^[aeiou])/i.test(string));
 };
 
 const removeSpaces = (string) => {
-  // your code here
+  return string.split(' ').join('');
 };
 
 const sumNumbers = (numbers) => {
-  // your code here
+  return numbers.reduce((accumulator, number) => accumulator + number, 0);
 };
 
 const sortByLastLetter = (strings) => {
-  // your code here
+  return strings.sort((a, b) => {
+    if ((a[a.length-1]) < (b[b.length-1])){
+      return -1
+    }
+    return 1;
+  });
 };
 
 module.exports = {
