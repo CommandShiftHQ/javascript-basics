@@ -27,15 +27,21 @@ const numbersToStrings = (numbers) => {
 };
 
 const uppercaseWordsInArray = (strings) => {
-  return Split(strings)
+  for (let i = 0; i < strings.length; i++) {
+    strings[i] = strings[i].toUpperCase()
+  }
+  return strings
 };
 
 const reverseWordsInArray = (strings) => {
-  // your code here
+  //
 };
 
 const onlyEven = (numbers) => {
-  // your code here
+  let even = (num) => {
+    return num % 2 === 0
+  }
+  return numbers.filter(even)
 };
 
 const removeNthElement2 = (index, array) => {
