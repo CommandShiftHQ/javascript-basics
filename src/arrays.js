@@ -34,11 +34,13 @@ const uppercaseWordsInArray = (strings) => {
 };
 
 const reverseWordsInArray = (strings) => {
-  //
+  const a = strings.join(" ")
+  const b = a.split("").reverse().join("").split(" ").reverse().join(",")
+  return b.split(",")
 };
 
 const onlyEven = (numbers) => {
-  let even = (num) => {
+  const even = (num) => {
     return num % 2 === 0
   }
   return numbers.filter(even)
@@ -53,11 +55,12 @@ const elementsStartingWithAVowel = (strings) => {
 };
 
 const removeSpaces = (string) => {
-  // your code here
+  return string = string.replace(/\s/g, '')
 };
 
 const sumNumbers = (numbers) => {
-  // your code here
+  const sum = (a, b) => a + b
+  return numbers.reduce(sum)
 };
 
 const sortByLastLetter = (strings) => {
