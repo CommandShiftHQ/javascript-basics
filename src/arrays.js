@@ -41,23 +41,32 @@ const onlyEven = (numbers) => {
 };
 
 const removeNthElement2 = (index, array) => {
-    return array.map(strings => strings.splice(index, 1));
+  return array.filter(arrFil => arrFil !== array[index]);
 };
 
 const elementsStartingWithAVowel = (strings) => {
-    return strings.filter(vowels => vowels.find('a','e','i','o','u'))
-};
+    return strings.filter(arrFil => arrFil.charAt(0) === 'a' ||
+    arrFil.charAt(0) === 'e' || arrFil.charAt(0) === 'i' || 
+    arrFil.charAt(0) === 'o' || arrFil.charAt(0) === 'u' || 
+    arrFil.charAt(0) === 'A' || arrFil.charAt(0) === 'E' || 
+    arrFil.charAt(0) === 'I' || arrFil.charAt(0) === 'O' ||
+    arrFil.charAt(0) === 'U')
+  };
 
 const removeSpaces = (string) => {
-    return string.trim();
+    return string.replace(/\s/g,'');
+  
 };
 
 const sumNumbers = (numbers) => {
-  // your code here
+      return numbers.reduce(function(total,curVal) {
+       return  total + curVal;
+     })
 };
 
 const sortByLastLetter = (strings) => {
-  // your code here
+    return strings.sort((cur,next) => cur.charCodeAt(cur.length-1) -
+    next.charCodeAt(next.length-1));
 };
 
 module.exports = {
