@@ -47,11 +47,11 @@ const isSquare = (a) => {
 };
 
 const startsWith = (char, string) => {
-  return 
+  return string.startsWith('');
 };
 
 const containsVowels = (string) => {
-  // your code here
+  return 'aeiou'.indexOf( chr[0].toLowerCase() ) !== -1;
 };
 
 const isLowerCase = (string) => {
