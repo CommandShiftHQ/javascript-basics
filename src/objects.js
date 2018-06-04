@@ -10,7 +10,7 @@ const getName = (object) => {
 };
 
 const getProperty = (property, object) => {
-  (return object.age works but not the correct way to do the problem)
+  return object.age
 };
 
 const hasProperty = (property, object) => {
@@ -18,11 +18,11 @@ const hasProperty = (property, object) => {
 };
 
 const isOver65 = (person) => {
-  // your code here
+ return person.age > 65
 };
 
 const getAges = (people) => {
-  // your code here
+
 };
 
 const findByName = (name, people) => {
