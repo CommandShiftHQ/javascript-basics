@@ -18,40 +18,32 @@ const addToArray2 = (element, array) => {
   return array.concat(element)
 };
 
+
 const removeNthElement = (index, array) => {
-  return array.splice(index, 1)
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = (numbers) => {
-  return String(numbers).split(",")
+  return numbers.toString().split(',')
 };
 
 const uppercaseWordsInArray = (strings) => {
-  for (let i = 0; i < strings.length; i++) {
-    strings[i] = strings[i].toUpperCase()
-  }
-  return strings
+  return strings.map(string => string.toUpperCase());
 };
 
-const reverseWordsInArray = (strings) => {
-  const a = strings.join(" ")
-  const b = a.split("").reverse().join("").split(" ").reverse().join(",")
-  return b.split(",")
-};
+const reverseWordsInArray = strings =>
+  strings.map(string => string.split('').reverse().join(''));
 
-const onlyEven = (numbers) => {
-  const even = (num) => {
-    return num % 2 === 0
-  }
-  return numbers.filter(even)
-};
+const onlyEven = numbers =>
+  numbers.filter(number => number % 2 === 0);
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.filter((element, elementIndex) =>
+    elementIndex !== index);
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  return strings.filter(string => /(^[aeiou])/i.test(string));
 };
 
 const removeSpaces = (string) => {
@@ -64,7 +56,12 @@ const sumNumbers = (numbers) => {
 };
 
 const sortByLastLetter = (strings) => {
-  // your code here
+  return strings.sort((a, b) => {
+    if ((a[a.length-1]) < (b[b.length-1])){
+      return -1
+    }
+    return 1;
+  });
 };
 
 module.exports = {
