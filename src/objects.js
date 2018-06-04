@@ -17,11 +17,8 @@ const getProperty = (property, object) => {
 };
 
 const hasProperty = (property, object) => {
-    if (property in object) {
-        return true
-    } else {
-        return false
-    }
+    const a = object.hasOwnProperty('property')
+    return a
 };
 
 const isOver65 = (person) => {
@@ -45,15 +42,29 @@ const findByName = (name, people) => {
 };
 
 const findHondas = (cars) => {
-    return cars
+    /* const arrayTooObject = (array, keyField) =>
+         cars.reduce((obj, item) => {
+             obj[item[keyField]] = item
+             return obj
+         }, {})
+     const a = arrayTooObject(cars, 'manufacturer')
+         //const b = Object.entries(a.Honda)
+     return a.Honda */
+
+
 };
 
 const averageAge = (people) => {
-    return people
+    return people.filter(obj => people.age === age)
 };
 
 const createTalkingPerson = (name, age) => {
-
+    const user = {
+        name: name,
+        age: age,
+        Introduce: () => `Hello my name is ${name} and I am ${age} years old`
+    }
+    return user
 };
 
 module.exports = {
