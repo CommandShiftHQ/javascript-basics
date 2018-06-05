@@ -1,5 +1,5 @@
 const getNthElement = (index, array) => {
-  // your code here
+  return index.forEach(array);
 };
 
 const arrayToCSVString = (array) => {
