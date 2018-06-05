@@ -35,7 +35,6 @@ const absolute = (a) => {
 };
 
 const quotient = (a, b) => {
-<<<<<<< HEAD
   if (Math.floor(a / b) >= 0)
     return Math.floor(a / b) 
   else
@@ -44,17 +43,6 @@ const quotient = (a, b) => {
 
 const remainder = (a, b) => {
   return a % b
-=======
-  const result = a / b;
-  if (result < 0 ) {
-    return Math.ceil(result);
-  }
-  return Math.floor(result);
-};
-
-const remainder = (a, b) => {
-  return a % b;
->>>>>>> a9e8c6eb80186026c83f85f75618f33b473a8311
 };
 
 module.exports = {
