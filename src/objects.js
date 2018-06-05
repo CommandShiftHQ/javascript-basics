@@ -50,7 +50,7 @@ const findHondas = (cars) => {
      const a = arrayTooObject(cars, 'manufacturer')
          //const b = Object.entries(a.Honda)
      return a.Honda */
-
+    return cars.map(obj => Object.keys(cars))
 
 };
 
@@ -65,9 +65,9 @@ const createTalkingPerson = (name, age) => {
     const user = {
         name: name,
         age: age,
-        Introduce: () => `Hello my name is ${name} and I am ${age} years old`
+        introduce: () => `Hello ${name}, my name is ${name} and I am ${age}!`
     }
-    return user
+    return users
 };
 
 module.exports = {
