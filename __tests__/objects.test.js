@@ -36,10 +36,12 @@ describe('getName', () => {
 
 describe('getProperty', () => {
   it('returns the given property', () => {
-    expect(getProperty('age', {
+    const fred = {
       name: 'Fred',
       age: 79,
-    })).toEqual(79);
+    };
+    expect(getProperty('age', fred)).toEqual(79);
+    expect(getProperty('name', fred)).toEqual('Fred');
   });
 });
 
@@ -49,8 +51,10 @@ describe('hasProperty', () => {
     age: 79,
   };
 
-  expect(hasProperty('age', fred)).toBe(true);
-  expect(hasProperty('favouriteColour', fred)).toBe(false);
+  it('returns true if the object has the given property', () => {
+    expect(hasProperty('age', fred)).toBe(true);
+    expect(hasProperty('favouriteColour', fred)).toBe(false);
+  });
 });
 
 describe('isOver65', () => {
