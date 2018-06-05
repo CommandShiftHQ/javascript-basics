@@ -17,7 +17,7 @@ const getProperty = (property, object) => {
 };
 
 const hasProperty = (property, object) => {
-    const a = object.hasOwnProperty('property')
+    const a = !!object[property]
     return a
 };
 
@@ -55,7 +55,7 @@ const findHondas = (cars) => {
 };
 
 const averageAge = (people) => {
-    return people.filter(obj => people.age === age)
+    return people
 };
 
 const createTalkingPerson = (name, age) => {
