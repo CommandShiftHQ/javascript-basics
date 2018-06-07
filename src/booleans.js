@@ -1,61 +1,88 @@
 const negate = (a) => {
-  // your code here
+  return 1 > a
 };
 
 const both = (a, b) => {
-  // your code here
+  return a > 0 && b > 0
 };
 
 const either = (a, b) => {
-  // your code here
+  return a > 0 || b > 0
 };
 
 const none = (a, b) => {
-  // your code here
+  if (a || b) {
+    return false
+  } else {
+    return true
+  }
 };
 
 const one = (a, b) => {
-  // your code here
+  if ((a !== b) && (a || b)) {
+    return true 
+  } else {
+    return false
+  }
 };
 
 const truthiness = (a) => {
-  // your code here
+  if (a) {
+    return true
+  } else {
+    return false
+  }
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  return a === b
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b
 };
 
 const isOdd = (a) => {
-  // your code here
+  if (a % 2 === 0) {
+    return false
+  } else { return true}
 };
 
 const isEven = (a) => {
-  // your code here
-};
+  if (a % 2 === 0) {
+    return true
+  } else { return false}};
 
 const isSquare = (a) => {
-  // your code here
+  return a >= 0 && Math.sqrt(a) % 1 === 0;
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  if (string.startsWith(char)) {return true
+  } else {return false}
 };
 
 const containsVowels = (string) => {
-  // your code here
+  const vowelList = 'AEIOUaeiou';
+  let vCount = 0;
+
+  for (let x = 0; x < string.length; x++)
+{
+  if (vowelList.indexOf(string[x]) !== -1)
+  {
+    vCount ++
+  }
+}
+return vCount > 0;
+
 };
 
 const isLowerCase = (string) => {
-  // your code here
+  return string === string.toLowerCase()
 };
 
 module.exports = {
