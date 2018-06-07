@@ -65,9 +65,9 @@ const createTalkingPerson = (name, age) => {
     const user = {
         name: name,
         age: age,
-        introduce: () => `Hello ${name}, my name is ${name} and I am ${age}!`
+        introduce: () => `Hi Fred, my name is ${name} and I am ${age}!`
     }
-    return users
+    return user
 };
 
 module.exports = {
