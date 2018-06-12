@@ -1,61 +1,67 @@
 const negate = (a) => {
-  // your code here
+  return !a;
 };
 
 const both = (a, b) => {
-  // your code here
+  return a && b;
 };
 
 const either = (a, b) => {
-  // your code here
+  return a || b;
 };
 
 const none = (a, b) => {
-  // your code here
+  return !(a || b);
 };
 
 const one = (a, b) => {
-  // your code here
+  return !a == b;
 };
 
 const truthiness = (a) => {
-  // your code here
+ return Boolean(a);
 };
 
 const isEqual = (a, b) => {
-  // your code here
+return a === b;
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b;
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b;
 };
 
 const isOdd = (a) => {
-  // your code here
+return a % 2 !== 0;
 };
 
 const isEven = (a) => {
-  // your code here
+  return a % 2 === 0;
 };
 
 const isSquare = (a) => {
-  // your code here
+  return (Math.sqrt(a)) % 1 === 0;
 };
 
+// 1. sqrt of number
+// 2. evaluate if number is integer
+
 const startsWith = (char, string) => {
-  // your code here
+  const firstLetter = string[0];
+  return firstLetter === char;
+  //check what the first letter is
+ // then check if that letter = the string
 };
 
 const containsVowels = (string) => {
-  // your code here
+  return /([aeiou])/i.test(string);
 };
 
 const isLowerCase = (string) => {
-  // your code here
+  return string === string.toLowerCase();
 };
 
 module.exports = {

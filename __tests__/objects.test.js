@@ -36,10 +36,12 @@ describe('getName', () => {
 
 describe('getProperty', () => {
   it('returns the given property', () => {
-    expect(getProperty('age', {
+    const fred = {
       name: 'Fred',
       age: 79,
-    })).toEqual(79);
+    };
+    expect(getProperty('age', fred)).toEqual(79);
+    expect(getProperty('name', fred)).toEqual('Fred');
   });
 });
 
