@@ -8,15 +8,21 @@ const {
 } = require('../src/strings');
 
 describe('sayHello', () => {
-  it('returns Hello with the given string!', () => {
-    expect(sayHello('MCR Codes')).toEqual('Hello, MCR Codes!');
+  xit('returns "Hello world!" when passed "world"', () => {
     expect(sayHello('world')).toEqual('Hello, world!');
+  });
+
+  xit('returns "Hello MCR Codes!" when passed "MCR Codes"', () => {
+    expect(sayHello('MCR Codes')).toEqual('Hello, MCR Codes!');
+  });
+
+  xit('returns "Hello fsghjdfkhgf!" when passed "fsghjdfkhgf"', () => {
     expect(sayHello('fsghjdfkhgf')).toEqual('Hello, fsghjdfkhgf!');
   });
 });
 
 describe('uppercase', () => {
-  it('returns the uppercased string', () => {
+  xit('returns the uppercased string', () => {
     expect(uppercase('abc')).toEqual('ABC');
     expect(uppercase('def')).toEqual('DEF');
     expect(uppercase('ghi')).toEqual('GHI');
@@ -24,7 +30,7 @@ describe('uppercase', () => {
 });
 
 describe('lowercase', () => {
-  it('returns the lowercased string', () => {
+  xit('returns the lowercased string', () => {
     expect(lowercase('ABC')).toEqual('abc');
     expect(lowercase('DEF')).toEqual('def');
     expect(lowercase('GHI')).toEqual('ghi');
@@ -32,7 +38,7 @@ describe('lowercase', () => {
 });
 
 describe('countCharacters', () => {
-  it('returns the number of characters in the string', () => {
+  xit('returns the number of characters in the string', () => {
     expect(countCharacters('fsfsgsfdg')).toEqual(9);
     expect(countCharacters('fsfsg')).toEqual(5);
     expect(countCharacters('')).toEqual(0);
@@ -40,7 +46,7 @@ describe('countCharacters', () => {
 });
 
 describe('firstCharacter', () => {
-  it('returns the first character of the string', () => {
+  xit('returns the first character of the string', () => {
     expect(firstCharacter('ABC')).toEqual('A');
     expect(firstCharacter('DEF')).toEqual('D');
     expect(firstCharacter('GHI')).toEqual('G');
@@ -48,8 +54,11 @@ describe('firstCharacter', () => {
 });
 
 describe('firstCharacters', () => {
-  it('returns the first n characters of the string', () => {
+  xit('returns the first 4 characters of the string', () => {
     expect(firstCharacters('sd32fg45', 4)).toEqual('sd32');
+  });
+
+  xit('returns the first 2 characters of the string', () => {
     expect(firstCharacters('asd', 2)).toEqual('as');
   });
 });
