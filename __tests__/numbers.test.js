@@ -89,7 +89,8 @@ describe('absolute', () => {
 });
 
 describe('quotient', () => {
-  // N.B. quotient of two numbers is the integer given by dividing the first by the second, without the remainder
+  // N.B. quotient of two numbers is the integer given by dividing
+  // the first by the second, without the remainder
   // 18 divided by 7 is 2 remainder 4 (or 2.571...)
   // so the quotient of 18 and 7 is 2
   xit('returns the quotient from dividing the first number by the second number', () => {

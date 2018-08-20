@@ -48,5 +48,5 @@ module.exports = {
   findByName,
   findHondas,
   averageAge,
-  createTalkingPerson
-}
+  createTalkingPerson,
+};
