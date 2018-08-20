@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/MCRcodes/javascript-basics#readme",
   "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^4.19.1",
+    "eslint-config-mcr-codes": "^1.2.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.9.1",
     "jest": "^22.4.4"
   },
   "jest": {
