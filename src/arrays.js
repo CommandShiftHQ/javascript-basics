@@ -1,61 +1,89 @@
 const getNthElement = (index, array) => {
-  // your code here
+  if(index > 3 ){
+    return array[index - array.length]
+  }else {
+    return array[index]
+  }
 };
 
 const arrayToCSVString = (array) => {
-  // your code here
+  return array.join();
 };
 
 const csvStringToArray = (string) => {
-  // your code here
+   return string.split(',');
 };
 
 const addToArray = (element, array) => {
-  // your code here
+    array.push(element);
+    
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+    return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  const remove = array.indexOf(index);
+  if (index !== -1) {
+    array.splice(index, 1);
+  }
 };
 
 const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(function(strings){
+  return strings.toUpperCase();
+})
 };
 
 const reverseWordsInArray = (strings) => {
-  // your code here
-};
+  return strings.map(function(strings) {
+    return strings.toString().split('').reverse().join('');
+  })
+  };
 
 const onlyEven = (numbers) => {
-  // your code here
+  return numbers.filter(function(val){return val %  2 === 0});
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  let newIndex = array.filter((value) => value != array[index]);
+  return newIndex;
 };
-
+ 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
-};
+  return strings.filter(function(val) {
+    return val.match(/^[aeiou]/gi);
+  }
+  )};
 
 const removeSpaces = (string) => {
-  // your code here
+  return string.replace(/\s/g, '');
 };
 
 const sumNumbers = (numbers) => {
-  // your code here
+  let s = 0;
+for(let i=0; i< numbers.length; i++)
+    s += numbers[i];
+    return s;
 };
 
 const sortByLastLetter = (strings) => {
-  // your code here
+  let sorted = strings.sort(function(a, b) {
+
+    if (a[a.length - 1] > b[b.length - 1])
+        return 1;
+    else if (a[a.length - 1] < b[b.length - 1])
+        return -1;
+
+    return 0;
+
+})
+return sorted;
 };
 
 module.exports = {
