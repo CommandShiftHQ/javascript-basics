@@ -39,11 +39,13 @@ const findByName = (name, people) => {
 };
 
 const findHondas = (cars) => {
-  // your code
+  return cars.filter(car => car.manufacturer === 'Honda');
 };
 
 const averageAge = (people) => {
-  // your code here
+  
+    return people.reduce((aveAge, person) => aveAge + person.age, 0) / people.length;
+  
 };
 
 const createTalkingPerson = (name, age) => {

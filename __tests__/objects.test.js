@@ -122,7 +122,7 @@ describe('findByName', () => {
 });
 
 describe('findHondas', () => {
-  xit('returns a list of cars manufactured by Honda', () => {
+  it('returns a list of cars manufactured by Honda', () => {
     const car1 = {
       manufacturer: 'Honda',
       year: 1997,
@@ -152,7 +152,7 @@ describe('findHondas', () => {
 });
 
 describe('averageAge', () => {
-  xit('returns the average age of the people in the list', () => {
+  it('returns the average age of the people in the list', () => {
     const john = {
       name: 'John',
       age: 60,
