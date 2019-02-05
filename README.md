@@ -84,5 +84,3 @@ const sayHello = (string) => {
 Can you see why we got the test result that we did?
 
 You challenge is to write some code in the `sayHello` function in `src/strings.js` that will make the test pass. *You should not update the tests...*
-
-Once you have fixed the `sayHello` function, go through all of the other files, until all of the tests have passed.
