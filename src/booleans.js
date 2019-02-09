@@ -49,22 +49,37 @@ const isEven = (a) => {
      return false
     }
 };
-};
 
 const isSquare = (a) => {
-  // your code here
+  if (Math.sqrt(a) % 1 === 0) {
+    return true}
+    else {
+      return false
+    }
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  if (string.startsWith(char)) {
+  return true} 
+  else {
+    return false
+  }
 };
 
 const containsVowels = (string) => {
-  // your code here
+  if (string.match(/[aeiouAEIOU]/)) {
+    return true }
+    else {
+      return false
+    }
 };
 
 const isLowerCase = (string) => {
-  // your code here
+  if (string == string.toLowerCase()) { 
+    return true }
+    else {
+      return false
+  }
 };
 
 module.exports = {
