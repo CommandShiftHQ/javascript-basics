@@ -1,61 +1,96 @@
 const getNthElement = (index, array) => {
-  // your code here
-};
+  if (index<=3) {
+    return array[index];
+  }
+  else {return array[(index%4)];
+}
+}
+
 
 const arrayToCSVString = (array) => {
-  // your code here
+  return array.join()// your code here
 };
 
 const csvStringToArray = (string) => {
-  // your code here
+  return string.split(',')// your code here
 };
 
 const addToArray = (element, array) => {
+  array.push(element);
   // your code here
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return array.concat(element);// your code here
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index,1)// your code here
 };
 
 const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.toString().split(',');// your code here
 };
 
 const uppercaseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(upper => upper.toUpperCase())// your code here
 };
 
 const reverseWordsInArray = (strings) => {
-  // your code here
+  return strings.map(string => string.split('').reverse().join(''));// your code here
 };
 
+
 const onlyEven = (numbers) => {
-  // your code here
+  return numbers.filter(a => a%2 === 0)// your code here
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.slice(0, index).concat(array.slice(index + 1, array.length))// your code here
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  return strings.filter(str => /^[aeiou]/i.test(str)) /* 
+
+  You can use a single RegExp and Array.prototype.filter() for that:
+  
+  console.log([
+    'Foo',
+    'Bar',
+    'Abc',
+    'Lorem',
+    'Ipsum'
+  ].filter(str => /^[aeiou]/i.test(str)));
+  
+  Full page
+  
+  Array.prototype.filter() returns a new array with all the elements that pass (return a truthy value) the predicate.
+  
+  RegExp.prototype.test() returns true if the RegExp finds a match on the string you pass in.
+  
+  Then, /^[aeiou]/i means:
+  
+      ^ matches the start of the string.
+      [aeiou] matches any of the characters inside the square brackets, a single time.
+      i is a case-insensitive modifier.
+  your code here
+  */
 };
 
 const removeSpaces = (string) => {
-  // your code here
+  return string = string.replace(/\s+/g, '')
 };
+/* your code here
+\s is the regex for "whitespace", and g is the "global" flag, meaning match ALL \s (whitespaces). 
+https://stackoverflow.com/questions/5964373/is-there-a-difference-between-s-g-and-s-g
 
+*/
 const sumNumbers = (numbers) => {
-  // your code here
+  return numbers.reduce((a, b) => a + b, 0);// your code here
 };
 
 const sortByLastLetter = (strings) => {
-  // your code here
+  return strings.sort().reverse();// your code here
 };
 
 module.exports = {
