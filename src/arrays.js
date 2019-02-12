@@ -35,23 +35,33 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  array.splice(index, 1);
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = (numbers) => {
-  const numberStringArray = [];
-  for (let i = 0; i < numbers.length; i++) {
-    numberStringArray.push(numbers[i].toString());
+  // const numberStringArray = [];
+  // for (let i = 0; i < numbers.length; i++) {
+  //   numberStringArray.push(numbers[i].toString());
+  // }
+  // return numberStringArray;
+
+  function turnIntoString(numberasnumber) {
+    return numberasnumber.toString();
   }
-  return numberStringArray;
+  return numbers.map(turnIntoString);
 };
 
 const uppercaseWordsInArray = (strings) => {
-  const upperCaseArray = [];
-  for (let i = 0; i < strings.length; i++) {
-    upperCaseArray.push(strings[i].toUpperCase());
+  // const upperCaseArray = [];
+  // for (let i = 0; i < strings.length; i++) {
+  //   upperCaseArray.push(strings[i].toUpperCase());
+  // }
+  // return upperCaseArray;
+
+  function toUpperCase(lowerCaseString) {
+    return lowerCaseString.toUpperCase();
   }
-  return upperCaseArray;
+  return strings.map(toUpperCase);
 };
 
 const reverseWordsInArray = (strings) => {
@@ -74,6 +84,8 @@ const onlyEven = (numbers) => {
       return (element[0]);
     }
     return evens;
+
+    
   });
 };
 
@@ -105,11 +117,16 @@ const removeSpaces = (string) => {
 };
 
 const sumNumbers = (numbers) => {
-  let total = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    total += numbers[i];
+  // let total = 0;
+  // for (let i = 0; i < numbers.length; i++) {
+  //   total += numbers[i];
+  // }
+  // return total;
+
+  function getSum(a, b) {
+    return a + b;
   }
-  return total;
+  return numbers.reduce(getSum);
 };
 
 const sortByLastLetter = (strings) => {
@@ -123,18 +140,17 @@ const sortByLastLetter = (strings) => {
     reversedStrings.push(reverseString);
   } // Reversed the string to get last letter at the start
 
-  reversedStrings.sort();
+  reversedStrings.sort(); // Sort this string by this letter
 
   const reReversedStrings = [];
-
-  for (let j = 0; j < reversedStrings.length; j++) {
-    const currentString2 = reversedStrings[j];
+  for (let i = 0; i < reversedStrings.length; i++) {
+    const currentString2 = reversedStrings[i];
     let reverseString2 = '';
-    for (let k = currentString2.length - 1; k >= 0; k--) {
-      reverseString2 += currentString2[k];
+    for (let j = currentString2.length - 1; j >= 0; j--) {
+      reverseString2 += currentString2[j];
     }
     reReversedStrings.push(reverseString2);
-  }
+  } // Reversed the revered string to get the original back but sorted by the last letter
   return reReversedStrings;
 };
 
