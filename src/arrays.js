@@ -1,8 +1,8 @@
 const getNthElement = (index, array) => {
-  if (index<=3) {
+  if (index<=(array.length -1)) {
     return array[index];
   }
-  else {return array[(index%4)];
+  else {return array[(index%array.length)];
 }
 }
 
@@ -90,7 +90,8 @@ const sumNumbers = (numbers) => {
 };
 
 const sortByLastLetter = (strings) => {
-  return strings.sort().reverse();// your code here
+  return strings.sort().reverse();// your code here sort function is correct so need to investigate that further
+  //-1 moves it before the other one or after the other if +1. Compare function
 };
 
 module.exports = {
