@@ -1,36 +1,51 @@
 const createPerson = (name, age) => {
-  // your code here
+  const newPerson = {name: name, age: age};
+  return newPerson
 };
 
 const getName = (object) => {
-  // your code here
+  return object.name;
 };
 
 const getProperty = (property, object) => {
-  // your code here
+  return object.age
 };
 
-const hasProperty = (property, object) => {
-  // your code here
+const hasProperty = (property, object) => { 
+  if (object.hasOwnProperty(property)) {
+    return true; 
+  } else {
+    return false
+  }
 };
 
 const isOver65 = (person) => {
-  // your code here
+  if (person.age > 65) {
+    return true }
+    else {
+      return false
+    }
 };
 
 const getAges = (people) => {
-  // your code here
+  let result = people.map(a => a.age);
+  return result;
 };
 
 const findByName = (name, people) => {
-  // your code here
+  const result = people.find( x => x.name === name );
+  return result
 };
 
 const findHondas = (cars) => {
-  // your code here
-};
+  let found = cars.filter(function(car) {
+    return car.manufacturer == 'Honda';
+  });
+    return found;
+}
 
-const averageAge = (people) => {
+
+const averageAge = (people) => { 
   // your code here
 };
 
