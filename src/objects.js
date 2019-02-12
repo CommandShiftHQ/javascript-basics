@@ -25,11 +25,15 @@ const isOver65 = (person) => {
 };
 
 const getAges = (people) => {
-  const agesArray = [];
-  for (let i = 0; i < people.length; i++) {
-    agesArray.push(people[i].age);
-  }
-  return agesArray;
+  // const agesArray = [];
+  // for (let i = 0; i < people.length; i++) {
+  //   agesArray.push(people[i].age);
+  // }
+  // return agesArray;
+
+  return people.map((person) => {
+    return person.age;
+  });
 };
 
 const findByName = (name, people) => {
@@ -65,19 +69,17 @@ const averageAge = (people) => {
   for (let j = 0; j < agesArray.length; j++) {
     totalAge += agesArray[j];
   }
-  const averageAgeValue = totalAge / agesArray.length;
-  return averageAgeValue;
+  return totalAge / agesArray.length;
 };
 
 const createTalkingPerson = (name, age) => {
-  
-  function sayHello() {
-    const sayHello1 =  'Hi ' + this.name;
-  }
-
-  name.sayHello1();
-
-  sayHello1 += ' my name is' + name + ' and I am 40!';
+  return {
+    name: name,
+    age: age,
+    introduce: function (friendsName) {
+      return 'Hi ' + friendsName + ', my name is ' + name + ' and I am ' + age + '!';
+    }
+  };
 };
 
 module.exports = {
