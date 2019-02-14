@@ -149,10 +149,10 @@ describe('findHondas', () => {
 
     expect(findHondas([car1, car2, car3, car4])).toEqual([car1, car4]);
   });
-});
+}); 
 
 describe('averageAge', () => {
-  xit('returns the average age of the people in the list', () => {
+  it('returns the average age of the people in the list', () => {
     const john = {
       name: 'John',
       age: 60,
@@ -173,7 +173,7 @@ describe('averageAge', () => {
 });
 
 describe('createTalkingPerson', () => {
-  xit('returns a person who can introduce themselves', () => {
+  it('returns a person who can introduce themselves', () => {
     const bill = createTalkingPerson('Bill', 40);
     expect(bill).toEqual({
       name: 'Bill',

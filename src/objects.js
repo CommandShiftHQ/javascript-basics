@@ -46,11 +46,24 @@ const findHondas = (cars) => {
 
 
 const averageAge = (people) => { 
-  // your code here
+  let getAge = (years) => {
+    return years.age;
+  }
+  let sum = (sum, years) => {
+    return sum + years;
+  }
+  let totalAge = people.map(getAge).reduce(sum);
+    return (totalAge / (people.map(getAge).length));
 };
 
-const createTalkingPerson = (name, age) => {
-  // your code here
+const createTalkingPerson = (name, age) => { 
+  let bill = {
+  name: 'Bill',
+  age: 40,
+  introduce: function () {  
+    console.log('Hi my name is ' + name + 'and I am' + age + '!');
+  },
+};
 };
 
 module.exports = {
