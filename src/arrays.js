@@ -6,7 +6,6 @@ const getNthElement = (index, array) => {
 }
 }
 
-
 const arrayToCSVString = (array) => {
   return array.join()// your code here
 };
@@ -90,8 +89,7 @@ const sumNumbers = (numbers) => {
 };
 
 const sortByLastLetter = (strings) => {
-  return strings.sort().reverse();// your code here sort function is correct so need to investigate that further
-  //-1 moves it before the other one or after the other if +1. Compare function
+  return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 };
 
 module.exports = {

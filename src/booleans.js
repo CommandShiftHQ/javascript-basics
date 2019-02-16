@@ -60,11 +60,6 @@ const containsVowels = (string) => {
 }
   return false;
 };
-  // your code here
-
-
-
-   
 
 const isLowerCase = (string) => {
   return string === string.toLowerCase()// your code here
