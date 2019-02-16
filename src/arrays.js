@@ -46,10 +46,11 @@ const removeNthElement2 = (index, array) => {
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
   return strings.filter((item) => {
     const firstLetter = item[0].toLowerCase();
-    return firstLetter === 'a' || firstLetter === 'e' || firstLetter === 'i' || firstLetter === 'o' || firstLetter === 'u';
+    return vowels.includes(firstLetter);
   });
 };
 
