@@ -35,51 +35,67 @@ const isLessThanOrEqualTo = (a, b) => {
 };
 
 const isOdd = (a) => {
-  if (a % 2 !== 0) {
-    return true}
-  else {
-     return false
-    }
-};
+  return a % 2 !== 0;
+};  
+  //if (a % 2 !== 0) {
+  //  return true}
+  // else {
+  //   return false
+  //  }
+
 
 const isEven = (a) => {
-  if (a % 2 === 0) {
-    return true}
-  else {
-     return false
-    }
-};
+  return a % 2 === 0;
+};  
+  //if (a % 2 === 0) {
+  //  return true}
+  // else {
+  //   return false
+  //   }
+
 
 const isSquare = (a) => {
-  if (Math.sqrt(a) % 1 === 0) {
-    return true}
-    else {
-      return false
-    }
-};
+  return (Math.sqrt(a) % 1 === 0);
+}; 
+  //if (Math.sqrt(a) % 1 === 0) {
+  //  return true}
+  //  else {
+  //    return false
+  //  }
+
 
 const startsWith = (char, string) => {
-  if (string.startsWith(char)) {
-  return true} 
-  else {
-    return false
-  }
+  return string.startsWith(char);
 };
+  // if (string.startsWith(char)) {
+  // return true} 
+  // else {
+  //   return false
+  // }
+
 
 const containsVowels = (string) => {
-  if (string.match(/[aeiouAEIOU]/)) {
-    return true }
-    else {
-      return false
-    }
+  return (/[aeiou]/i).test(string); 
 };
+  // tried to remove if else statement as per feebdback but below returns an array
+  //return string.match(/[aeiouAEIOU]/); 
+
+  // below works
+  // if (string.match(/[aeiouAEIOU]/)) {
+  //   return true }
+  //  else {
+  //    return false
+  //  }
+
 
 const isLowerCase = (string) => {
-  if (string == string.toLowerCase()) { 
-    return true }
-    else {
-      return false
-  }
+  return string === string.toLowerCase();
+
+  //if (string == string.toLowerCase()) { 
+  //  return true }
+  //  else {
+  //    return false
+  // }
 };
 
 module.exports = {

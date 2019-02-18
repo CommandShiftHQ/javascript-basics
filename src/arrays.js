@@ -7,7 +7,10 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = (array) => {
-  return (array.join());
+  return array.join(',');
+  
+  //feedback states to change below to above (although below still passes test?)
+  //return array.join();
 };
 
 const csvStringToArray = (string) => {
