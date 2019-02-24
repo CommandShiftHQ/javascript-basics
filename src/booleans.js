@@ -91,12 +91,13 @@ const containsVowels = (string) => {
 };
 
 const isLowerCase = (string) => {
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === string[i].toLowerCase()) {
-      return true;
-    }
-    return false;
-  }
+  // for (let i = 0; i < string.length; i++) {
+  //   if (string[i] === string[i].toLowerCase()) {
+  //     return true;
+  //   }
+  //   return false;
+  // }
+  return (string === string.toLowerCase());
 };
 
 module.exports = {

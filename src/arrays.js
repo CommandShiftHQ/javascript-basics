@@ -78,15 +78,14 @@ const reverseWordsInArray = (strings) => {
 };
 
 const onlyEven = (numbers) => {
-  const evens = [];
-  return numbers.filter((element) => {
-    if (element % 2 !== 0) {
-      return (element[0]);
-    }
-    return evens;
-
-    
-  });
+  // const evens = [];
+  // return numbers.filter((element) => {
+  //   if (element % 2 !== 0) {
+  //     return (element[0]);
+  //   }
+  //   return evens;
+  // });
+  
 };
 
 const removeNthElement2 = (index, array) => {
