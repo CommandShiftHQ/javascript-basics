@@ -25,12 +25,16 @@ const isSquare = (a) => Math.sqrt(a) % 1 === 0;
 const startsWith = (char, string) => string.startsWith(char);
 
 const containsVowels = (string) => {
-    // your code here
-  };
-
-const isLowerCase = (string) => {
-  // your code here
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  for (let i = 0; i < vowels.length; i++) {
+    if (string.toLowerCase().includes(vowels[i])) {
+      return true;
+    }
+  }
+  return false;
 };
+
+const isLowerCase = (string) => string === string.toLowerCase();
 
 module.exports = {
   negate,
@@ -48,4 +52,4 @@ module.exports = {
   startsWith,
   containsVowels,
   isLowerCase,
-};
+}
