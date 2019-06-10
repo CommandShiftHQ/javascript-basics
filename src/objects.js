@@ -33,7 +33,7 @@ const getAges = (people) => {
 };
 
 const findByName = (name, people) => {
-  // your code here
+  
 };
 
 const findHondas = (cars) => {
