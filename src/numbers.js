@@ -1,45 +1,45 @@
-const add = (a, b) => {
-  // your code here
+const add = (num1, num2) => {
+  return num1 + num2;
 };
 
-const subtract = (a, b) => {
-  // your code here
+const subtract = (num1, num2) => {
+  return num1 - num2;
 };
 
-const multiply = (a, b) => {
-  // your code here
+const multiply = (num1, num2) => {
+  return num1 * num2; 
 };
 
-const divide = (a, b) => {
-  // your code here
+const divide = (num1, num2) => {
+  return num1 / num2;
 };
 
-const power = (a, b) => {
-  // your code here
+const power = (num1, num2) => {
+  return Math.pow(num1, num2);
 };
 
-const round = (a) => {
-  // your code here
+const round = (num1) => {
+  return Math.round(num1);
 };
 
-const roundUp = (a) => {
-  // your code here
+const roundUp = (num1) => {
+  return Math.roundUp(num1);
 };
 
-const roundDown = (a) => {
-  // your code here
+const roundDown = (num1) => {
+  return Math.roundDown(num1);
 };
 
-const absolute = (a) => {
-  // your code here
+const absolute = (num1) => {
+  return Math.abs(num1);
 };
 
-const quotient = (a, b) => {
-  // your code here
+const quotient = (num1, num2) => {
+  return
 };
 
-const remainder = (a, b) => {
-  // your code here
+const remainder = (num1, num2) => {
+  return num1 % num2;
 };
 
 module.exports = {

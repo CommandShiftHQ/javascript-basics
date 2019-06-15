@@ -1,25 +1,25 @@
-const sayHello = (string) => {
-  // your code here
+const sayHello = (world) => {
+  return  'Hello, ' + world + '!'; 
 };
 
-const uppercase = (string) => {
-  // your code here
+const uppercase = (abc) => {
+  return abc.toUpperCase();
 };
 
-const lowercase = (string) => {
-  // your code here
+const lowercase = (ABC) => {
+  return ABC.toLowerCase();
 };
 
-const countCharacters = (string) => {
-  // your code here
+const countCharacters = (fsfsgsfdg) => {
+  return fsfsgsfdg.length;
 };
 
-const firstCharacter = (string) => {
-  // your code here
+const firstCharacter = (ABC) => {
+  return ABC.charAt(0);
 };
 
-const firstCharacters = (string, n) => {
-  // your code here
+const firstCharacters = (sd32fg45, n) => {
+  return sd32fg45.substring(0, n);
 };
 
 module.exports = {
