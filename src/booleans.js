@@ -1,18 +1,26 @@
 const negate = (a) => {
-  // your code here
+  if (a = a ) {
+    return false;
+  } 
+  return true;
+      
 };
 
 const both = (a, b) => {
-  // your code here
+  if (a && b) {
+    return true;
+  }
+  return false;
 };
 
 const either = (a, b) => {
-  // your code here
+  if (a && b) {
+    return true;
+  }
+  return false;
 };
 
-const none = (a, b) => {
-  // your code here
-};
+const none = (a, b) => !(b || a);
 
 const one = (a, b) => {
   // your code here
