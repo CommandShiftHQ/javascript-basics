@@ -1,5 +1,5 @@
 const add = (a, b) => {
-  return (a + b)
+  return (a + b);
 };
 
 const subtract = (a, b) => {
@@ -16,6 +16,7 @@ const divide = (a, b) => {
 
 const power = (a, b) => {
   // your code here
+  return Math.pow(a,b);
 };
 
 const round = (a) => {
