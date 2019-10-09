@@ -1,6 +1,6 @@
 # JavaScript Basics
 
-The repository contains test cases and empty function definitions which need to be populated to solve the different challenges set in this weeks walkthrough.
+The repository contains test cases and empty function definitions which need to be populated to solve the different challenges set in this weeks walkthrough. *You should not update the tests*
 
 ## Getting started
 
@@ -14,7 +14,7 @@ Then `cd` into the repository.
 
 You will see a few files and directory in here. Most interestingly we have:
 - `src` directory - this is where our code lives
-- `__tests__` directory - this is where our test code lives
+- `test` directory - this is where our test code lives
 - a `package.json` file, which contains some configuration for our project
 
 ### Install the project dependencies
@@ -24,20 +24,20 @@ The `npm install` command (or `npm i` for short)  will tell npm (node package ma
 
 Now run the `npm install` command. Once it has completed, you should see a new `node_modules` directory in the repository. This is where our dependencies live. It's important that we don't add this directory to git, since it can contain 100000's of files that we don't need to maintain, and can just be downloaded.
 
-In the `package.json` file you can see that there is only one dependency for this project - **jest**
+In the `package.json` file you can see that there is only devDependencies for this project.
 
 ### Run the test code
 Jest is a JavaScript testing framework - it allows us to write automated tests that 
 1. describe how our code should behave
 2. assert that is _does_ behave in the desired way
 
-Once you have installed the dependencies, run `npm test`. This command will run the `test` script defined in our `package.json`, which simply runs Jest. When we run Jest, it will execute the test code written in the `__tests__` directory. For now, you should see a message saying that all of the tests were skipped.
+Once you have installed the dependencies, run `npm test` or `npm t` for short. This command will run the `test` script defined in our `package.json`, which simply runs Jest. When we run Jest, it will execute the test code written in the `test` directory. For now, you should see a message saying that all of the tests were skipped.
 
-Take a look at the files in the `__tests__` directory - you will see a few files in here, all ending with `.test.js`. These map to the files in the `src` directory, and contain the tests for these files.
+Take a look at the files in the `test` directory - you will see a few files in here, all ending with `.test.js`. These map to the files in the `src` directory, and contain the tests for these files.
 
-For example `__tests__/strings.test.js` contains the tests for the functions defined in `src/strings.js`.
+For example `test/strings.test.js` contains the tests for the functions defined in `src/strings.js`.
 
-Take a look at the `__tests__/strings.test.js`. At the top, we have a `require` statement. This imports the functions from our `src/strings.js` file into the test file, so that the tests can use the functions we have written in that file.
+Take a look at the `test/strings.test.js`. At the top, we have a `require` statement. This imports the functions from our `src/strings.js` file into the test file, so that the tests can use the functions we have written in that file.
 
 Beneath the `require`s are the actual tests.
 

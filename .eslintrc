@@ -1,3 +1,10 @@
 {
-  "extends": "mcr-codes"
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["import", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "env": {
+    "jest": true
+  }
 }

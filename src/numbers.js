@@ -18,19 +18,19 @@ const power = (a, b) => {
   // your code here
 };
 
-const round = (a) => {
+const round = a => {
   // your code here
 };
 
-const roundUp = (a) => {
+const roundUp = a => {
   // your code here
 };
 
-const roundDown = (a) => {
+const roundDown = a => {
   // your code here
 };
 
-const absolute = (a) => {
+const absolute = a => {
   // your code here
 };
 
@@ -53,5 +53,5 @@ module.exports = {
   roundDown,
   absolute,
   quotient,
-  remainder,
+  remainder
 };
