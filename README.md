@@ -1,6 +1,6 @@
 # JavaScript Basics
 
-The repository contains test cases and empty function definitions which need to be populated to solve the different challenges set in this weeks walkthrough. *You should not update the tests*
+The repository contains test cases and empty function definitions which need to be populated to solve the different challenges set in this weeks walkthrough. 🚨*You should not update the tests* 🚨
 
 ## Getting started
 
@@ -83,4 +83,4 @@ const sayHello = (string) => {
 
 Can you see why we got the test result that we did?
 
-You challenge is to write some code in the `sayHello` function in `src/strings.js` that will make the test pass. *You should not update the tests...*
+You challenge is to write some code in the `sayHello` function in `src/strings.js` that will make the test pass. 🚨*You should not update the tests* 🚨
