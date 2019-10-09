@@ -2,4 +2,5 @@
 *.log
 node_modules/
 src/solutions.js
+package-lock.json
 

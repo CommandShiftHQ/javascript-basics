@@ -2,11 +2,11 @@ const getNthElement = (index, array) => {
   // your code here
 };
 
-const arrayToCSVString = (array) => {
+const arrayToCSVString = array => {
   // your code here
 };
 
-const csvStringToArray = (string) => {
+const csvStringToArray = string => {
   // your code here
 };
 
@@ -22,19 +22,19 @@ const removeNthElement = (index, array) => {
   // your code here
 };
 
-const numbersToStrings = (numbers) => {
+const numbersToStrings = numbers => {
   // your code here
 };
 
-const uppercaseWordsInArray = (strings) => {
+const uppercaseWordsInArray = strings => {
   // your code here
 };
 
-const reverseWordsInArray = (strings) => {
+const reverseWordsInArray = strings => {
   // your code here
 };
 
-const onlyEven = (numbers) => {
+const onlyEven = numbers => {
   // your code here
 };
 
@@ -42,19 +42,19 @@ const removeNthElement2 = (index, array) => {
   // your code here
 };
 
-const elementsStartingWithAVowel = (strings) => {
+const elementsStartingWithAVowel = strings => {
   // your code here
 };
 
-const removeSpaces = (string) => {
+const removeSpaces = string => {
   // your code here
 };
 
-const sumNumbers = (numbers) => {
+const sumNumbers = numbers => {
   // your code here
 };
 
-const sortByLastLetter = (strings) => {
+const sortByLastLetter = strings => {
   // your code here
 };
 
@@ -73,5 +73,5 @@ module.exports = {
   elementsStartingWithAVowel,
   removeSpaces,
   sumNumbers,
-  sortByLastLetter,
+  sortByLastLetter
 };
