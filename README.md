@@ -24,7 +24,7 @@ The `npm install` command (or `npm i` for short)  will tell npm (node package ma
 
 Now run the `npm install` command. Once it has completed, you should see a new `node_modules` directory in the repository. This is where our dependencies live. It's important that we don't add this directory to git, since it can contain 100000's of files that we don't need to maintain, and can just be downloaded.
 
-In the `package.json` file you can see that there is only devDependencies for this project.
+In the `package.json` file you can see that there are only devDependencies for this project.
 
 ### Run the test code
 Jest is a JavaScript testing framework - it allows us to write automated tests that 
@@ -82,5 +82,7 @@ const sayHello = (string) => {
 ```
 
 Can you see why we got the test result that we did?
+
+### Update the function so that the test pass
 
 You challenge is to write some code in the `sayHello` function in `src/strings.js` that will make the test pass. 🚨*You should not update the tests* 🚨
