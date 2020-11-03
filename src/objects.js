@@ -48,29 +48,58 @@ return answer;
 };
 
 const findHondas = cars => {
-  const car = [];
-  for (let index = 0; index < cars.length; index++){
-  car.push(car.manufacturer)
+  
+  //for (car of cars) 
+  //cars.splice(1,4)
+  let hondas = cars.filter(cars => cars.manufacturer === 'Honda')
+  //return car
+  return hondas
+  //----------------------------EXPLANATION------------------------------
+  /*cars.filter is saying goto cars var, then move to the manufacturer 
+  part of the list and return the objects of the array that contain the 
+  information with the name "Honda"*/
+  //---------------------------------------------------------------------
+  //---------------------IDEAS THAT DID NOT WORK-------------------------
+  //console.log(car[index]);
+  //cars.find(car => car.manufacturer === cars)
+  //for (let index = 0; index < cars.length; index++){
+  //let answer = '';
+ /* cars.find(car => car.manufacturer === cars.manufacturer)
+  return cars*/
 }
-  return car
-  /*cars.sort(function(){ 
-*/
-/*let car = [honda]
-return car*/
+const averageAge = people => {
+  //I need to get values from age
+  /*const reducer = (total, currentValue) => total + currentValue.age;
+    const sum = people.reduce(reducer);
+      console.log (sum / people.length);*/
+     
+const avg = people.reduce((age, person) => {
+    return age + person.age;
+  }, 0);
+  return avg / people.length;
+    //console.log (sum)
+  //I need the length off the array
+  //Then divide are by length
+ /* const total = 0;
+  people.age.forEach(age => {
+    return total += age*/
+ // };
+  //for (let avg = 0; avg < people.length; avg++)
+  /*  let total = 0;
+people.forEach(function (people){
+  total += people
+  return total / people.length})*/
 };
 
-const averageAge = people => {
- /* let avg = [john, eric, gary];
-  return (getAverageAge(avg));*/
-};
 
 const createTalkingPerson = (name, age) => {
- /* const bill = {
-    name: 'Bill',
-    age: 40,
-    intro: "Hi Fred, my name is Bill and I am 40!"
-  }
-  return bill.name.age.intro*/
+  return {
+    name: name,
+    age: age,
+    introduce: newFriend =>  {
+    return `Hi ${newFriend}, my name is ${name} and I am ${age}!`;
+    }
+  }; 
 };
 
 module.exports = {

@@ -156,7 +156,7 @@ describe("findHondas", () => {
 });
 
 describe("averageAge", () => {
-  xit("returns the average age of the people in the list", () => {
+  it("returns the average age of the people in the list", () => {
     const john = {
       name: "John",
       age: 60
@@ -177,7 +177,7 @@ describe("averageAge", () => {
 });
 
 describe("createTalkingPerson", () => {
-  xit("returns a person who can introduce themselves", () => {
+  it("returns a person who can introduce themselves", () => {
     const bill = createTalkingPerson("Bill", 40);
     expect(bill).toEqual({
       name: "Bill",

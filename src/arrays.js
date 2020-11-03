@@ -24,13 +24,18 @@ const csvStringToArray = string => {
 const addToArray = (element, array) => {
   // pass
   array.push(element);
+  //array.push([element]);
+  //array.concat(element);
+  //array.concat([element]);
+  //array.push(4)
+  //array.concat(4)
 };
 
 const addToArray2 = (element, array) => {
-  /*pass (well it did pass before ?????)*/
-  array2.push(4);
-  return array2;
- 
+  
+ return array.concat(element);
+//array.push(element);
+ //return array
 };
 
 const removeNthElement = (index, array) => {
