@@ -1,61 +1,65 @@
 const getNthElement = (index, array) => {
-  // your code here
+  return array[index % array.length];
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array[index .join];
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string[index .split(',')]; 
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  return array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return index + array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index, 1);
+  return array
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  numbers.map(number => Strings());
+  return numbers
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.map(letters => letters.toUpperCase());
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+ return strings.maps(letters => letters.split("").reverse().join(""));
 };
 
-const onlyEven = numbers => {
-  // your code here
+const onlyEven = (numbers) => numbers.filter(number => number % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.filter((_, itemIndex) => itemIndex !== index);
 };
 
-const elementsStartingWithAVowel = strings => {
-  // your code here
+const elementsStartingWithAVowel = (strings) => {
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+return 
+ 
 };
 
 const removeSpaces = string => {
-  // your code here
+  return [index.strip()];
 };
 
-const sumNumbers = numbers => {
-  // your code here
-};
+const sumNumbers = (numbers) => numbers.reduce((total, number) => {
+  return total + number
+}, 0);
 
-const sortByLastLetter = strings => {
-  // your code here
+const sortByLastLetter = (strings) => {
+  const reverseString = (item) => item.split('').reverse().join('');
+  return strings.map(reverseString).sort().map(reverseString);
 };
 
 module.exports = {
