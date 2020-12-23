@@ -37,7 +37,6 @@ const averageAge = people => {
 const totalAge = people.reduce((prevAge, currentPerson) => {
   return prevAge + currentPerson.age;
   }, 0);
-
   return totalAge / people.length;
 };
 

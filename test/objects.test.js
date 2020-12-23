@@ -83,7 +83,7 @@ describe("isOver65", () => {
 });
 
 describe("getAges", () => {
-  xit("returns the ages of each person in the array", () => {
+  it("returns the ages of each person in the array", () => {
     const jim = {
       name: "Jim",
       age: 66
@@ -104,7 +104,7 @@ describe("getAges", () => {
 });
 
 describe("findByName", () => {
-  xit("returns the person with the given name", () => {
+  it("returns the person with the given name", () => {
     const jim = {
       name: "Jim",
       age: 66
@@ -126,7 +126,7 @@ describe("findByName", () => {
 });
 
 describe("findHondas", () => {
-  xit("returns a list of cars manufactured by Honda", () => {
+  it("returns a list of cars manufactured by Honda", () => {
     const car1 = {
       manufacturer: "Honda",
       year: 1997,
@@ -156,7 +156,7 @@ describe("findHondas", () => {
 });
 
 describe("averageAge", () => {
-  xit("returns the average age of the people in the list", () => {
+  it("returns the average age of the people in the list", () => {
     const john = {
       name: "John",
       age: 60
@@ -177,7 +177,7 @@ describe("averageAge", () => {
 });
 
 describe("createTalkingPerson", () => {
-  xit("returns a person who can introduce themselves", () => {
+  it("returns a person who can introduce themselves", () => {
     const bill = createTalkingPerson("Bill", 40);
     expect(bill).toEqual({
       name: "Bill",

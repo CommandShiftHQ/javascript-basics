@@ -16,7 +16,6 @@ const none = (a, b) => {
 
 const one = (a, b) => {
   return (a || b) && !(a && b);
-
 };
 
 const truthiness = a => {
