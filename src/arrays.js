@@ -1,61 +1,75 @@
 const getNthElement = (index, array) => {
-  // your code here
+  if (index - array.length === 0) {
+    return array[0];
+  }
+  if (index > array.length) {
+    const indexNew = index - array.length;
+    return array[indexNew];
+  }
+  return array[index];
 };
 
-const arrayToCSVString = array => {
-  // your code here
+const arrayToCSVString = (array) => {
+  return array.toString();
 };
 
-const csvStringToArray = string => {
-  // your code here
+const csvStringToArray = (string) => {
+  return string.split(",");
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index, 1);
 };
 
-const numbersToStrings = numbers => {
-  // your code here
+const numbersToStrings = (numbers) => {
+  return numbers.map(String);
 };
 
-const uppercaseWordsInArray = strings => {
-  // your code here
+const uppercaseWordsInArray = (strings) => {
+  return strings.map((word) => word.toUpperCase());
 };
 
-const reverseWordsInArray = strings => {
-  // your code here
+const reverseWordsInArray = (strings) => {
+  return strings.map((word) =>
+    word
+      .split("")
+      .reverse()
+      .join("")
+  );
 };
 
-const onlyEven = numbers => {
-  // your code here
+const onlyEven = (numbers) => {
+  return numbers.filter((number) => number % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArray = [...array];
+  newArray.splice(index, 1);
+  return newArray;
 };
 
-const elementsStartingWithAVowel = strings => {
-  // your code here
+const elementsStartingWithAVowel = (strings) => {
+  return strings.filter((word) => word.match(/^[aeiou].*$/gi));
 };
 
-const removeSpaces = string => {
-  // your code here
+const removeSpaces = (string) => {
+  return string.replace(/\s/g, "");
 };
 
-const sumNumbers = numbers => {
-  // your code here
+const sumNumbers = (numbers) => {
+  return numbers.reduce((a, b) => a + b);
 };
 
-const sortByLastLetter = strings => {
-  // your code here
+const sortByLastLetter = (strings) => {
+  return strings.sort((a, b) => a.slice(-1).localeCompare(b.slice(-1)));
 };
 
 module.exports = {
@@ -73,5 +87,5 @@ module.exports = {
   elementsStartingWithAVowel,
   removeSpaces,
   sumNumbers,
-  sortByLastLetter
+  sortByLastLetter,
 };
