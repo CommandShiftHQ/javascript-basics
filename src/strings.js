@@ -1,6 +1,7 @@
 const sayHello = string => {
-  // your code here
-};
+  let world = "Hello, world!";
+  return "Hello, world!";
+}
 
 const uppercase = string => {
   // your code here
