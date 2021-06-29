@@ -112,7 +112,7 @@ describe("onlyEven", () => {
 });
 
 describe("removeNthElement2", () => {
-  xit("returns an array with the nth element removed, and does not mutate the original", () => {
+  it("returns an array with the nth element removed, and does not mutate the original", () => {
     const array = ["bike", "car", "train", "bus"];
     expect(removeNthElement2(2, array)).toEqual(["bike", "car", "bus"]);
     expect(array).toEqual(["bike", "car", "train", "bus"]);
@@ -120,7 +120,7 @@ describe("removeNthElement2", () => {
 });
 
 describe("elementsStartingWithAVowel", () => {
-  xit("returns elements starting with a vowel", () => {
+  it("returns elements starting with a vowel", () => {
     expect(
       elementsStartingWithAVowel([
         "apple",
@@ -153,7 +153,7 @@ describe("elementsStartingWithAVowel", () => {
     ).toEqual(["apple", "epple", "ipple", "opple", "upple"]);
   });
 
-  xit("is case insensitive", () => {
+  it("is case insensitive", () => {
     expect(
       elementsStartingWithAVowel([
         "Apple",
@@ -188,7 +188,7 @@ describe("elementsStartingWithAVowel", () => {
 });
 
 describe("removeSpaces", () => {
-  xit("returns the string with the space characters removed", () => {
+  it("returns the string with the space characters removed", () => {
     expect(removeSpaces("this string has spaces")).toEqual(
       "thisstringhasspaces"
     );
@@ -199,13 +199,13 @@ describe("removeSpaces", () => {
 });
 
 describe("sumNumbers", () => {
-  xit("returns the sum of the numbers in the array", () => {
+  it("returns the sum of the numbers in the array", () => {
     expect(sumNumbers([1, 3, 5, 6, 2, 8])).toEqual(25);
   });
 });
 
 describe("sortByLastLetter", () => {
-  xit("sorts the string by the last character", () => {
+  it("sorts the string by the last character", () => {
     expect(
       sortByLastLetter(["Lannister", "Stark", "Greyjoy", "Targaryen"])
     ).toEqual(["Stark", "Targaryen", "Lannister", "Greyjoy"]);
