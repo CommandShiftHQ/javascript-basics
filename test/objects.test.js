@@ -12,7 +12,7 @@ const {
 } = require("../src/objects");
 
 describe("createPerson", () => {
-  xit("creates an object with the given name and age properties", () => {
+  it("creates an object with the given name and age properties", () => {
     expect(createPerson("Fred", 79)).toEqual({
       name: "Fred",
       age: 79
@@ -26,7 +26,7 @@ describe("createPerson", () => {
 });
 
 describe("getName", () => {
-  xit("returns the name property of the object", () => {
+  it("returns the name property of the object", () => {
     expect(
       getName({
         name: "Fred",
@@ -37,7 +37,7 @@ describe("getName", () => {
 });
 
 describe("getProperty", () => {
-  xit("returns the given property", () => {
+  it("returns the given property", () => {
     expect(
       getProperty("age", {
         name: "Fred",
@@ -53,14 +53,14 @@ describe("hasProperty", () => {
     age: 79
   };
 
-  xit("returns true if the object has the given property", () => {
+  it("returns true if the object has the given property", () => {
     expect(hasProperty("age", fred)).toBe(true);
     expect(hasProperty("favouriteColour", fred)).toBe(false);
   });
 });
 
 describe("isOver65", () => {
-  xit("returns true if the person is aged over 65", () => {
+  it("returns true if the person is aged over 65", () => {
     const jim = {
       name: "Jim",
       age: 66
@@ -83,7 +83,7 @@ describe("isOver65", () => {
 });
 
 describe("getAges", () => {
-  xit("returns the ages of each person in the array", () => {
+  it("returns the ages of each person in the array", () => {
     const jim = {
       name: "Jim",
       age: 66
@@ -104,7 +104,7 @@ describe("getAges", () => {
 });
 
 describe("findByName", () => {
-  xit("returns the person with the given name", () => {
+  it("returns the person with the given name", () => {
     const jim = {
       name: "Jim",
       age: 66
@@ -126,7 +126,7 @@ describe("findByName", () => {
 });
 
 describe("findHondas", () => {
-  xit("returns a list of cars manufactured by Honda", () => {
+  it("returns a list of cars manufactured by Honda", () => {
     const car1 = {
       manufacturer: "Honda",
       year: 1997,
@@ -156,7 +156,7 @@ describe("findHondas", () => {
 });
 
 describe("averageAge", () => {
-  xit("returns the average age of the people in the list", () => {
+  it("returns the average age of the people in the list", () => {
     const john = {
       name: "John",
       age: 60
@@ -177,7 +177,7 @@ describe("averageAge", () => {
 });
 
 describe("createTalkingPerson", () => {
-  xit("returns a person who can introduce themselves", () => {
+  it("returns a person who can introduce themselves", () => {
     const bill = createTalkingPerson("Bill", 40);
     expect(bill).toEqual({
       name: "Bill",

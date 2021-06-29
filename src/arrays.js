@@ -12,9 +12,7 @@ const addToArray2 = (element, array) => {
   return [...array, element];
 };
 
-const removeNthElement = (index, array) => {
-  array.splice(index, 1);
-};
+const removeNthElement = (index, array) => array.splice(index, 1);
 
 const numbersToStrings = numbers => numbers.map(String);
 
