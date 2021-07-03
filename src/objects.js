@@ -1,41 +1,57 @@
+const { arrayToCSVString } = require("./arrays");
+
 const createPerson = (name, age) => {
-  // your code here
+  return {
+    name: name,
+    age: age,
+  };
 };
 
 const getName = object => {
-  // your code here
+  return object.name;
 };
 
 const getProperty = (property, object) => {
-  // your code here
+  return object[property];
 };
 
 const hasProperty = (property, object) => {
-  // your code here
+  return object.hasOwnProperty(property);
 };
 
 const isOver65 = person => {
-  // your code here
+  if (person.age > 65) {
+    return true;
+  };
+  return false;
 };
 
 const getAges = people => {
-  // your code here
+  return people.map(people => people.age);
 };
 
 const findByName = (name, people) => {
-  // your code here
+  return people.find(people => people.name === name);
 };
 
 const findHondas = cars => {
-  // your code here
+  return cars.filter(cars => cars.manufacturer === "Honda");
 };
 
 const averageAge = people => {
-  // your code here
+  let index = 0;
+  people.forEach((person) => { index += person.age });
+  return (index / people.length);
 };
 
+
 const createTalkingPerson = (name, age) => {
-  // your code here
+  return {
+    name: name,
+    age: age,
+
+    introduce: (newPerson) => `Hi ${newPerson}, my name is ${name} and I am ${age}!`
+  };
 };
 
 module.exports = {

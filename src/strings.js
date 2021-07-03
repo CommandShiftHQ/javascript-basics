@@ -3,7 +3,7 @@ const sayHello = string => {
 };
 
 const uppercase = string => {
-  return string.toUpperCase(); 
+  return string.toUpperCase();
 };
 
 const lowercase = string => {
