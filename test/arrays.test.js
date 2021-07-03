@@ -21,6 +21,7 @@ describe("getNthElement", () => {
 
   xit("returns the element at the given position", () => {
     expect(getNthElement(0, array)).toEqual("cat");
+
     expect(getNthElement(2, array)).toEqual("elephant");
     expect(getNthElement(3, array)).toEqual("fox");
   });
@@ -59,7 +60,7 @@ describe("addToArray", () => {
 });
 
 describe("addToArray2", () => {
-  xit("returns a new array with the value appended", () => {
+  it("returns a new array with the value appended", () => {
     const array = ["a", "b", "c"];
     const array2 = [1, 2, 3];
 
@@ -112,7 +113,7 @@ describe("onlyEven", () => {
 });
 
 describe("removeNthElement2", () => {
-  xit("returns an array with the nth element removed, and does not mutate the original", () => {
+  it.only("returns an array with the nth element removed, and does not mutate the original", () => {
     const array = ["bike", "car", "train", "bus"];
     expect(removeNthElement2(2, array)).toEqual(["bike", "car", "bus"]);
     expect(array).toEqual(["bike", "car", "train", "bus"]);
@@ -205,7 +206,7 @@ describe("sumNumbers", () => {
 });
 
 describe("sortByLastLetter", () => {
-  xit("sorts the string by the last character", () => {
+  it("sorts the string by the last character", () => {
     expect(
       sortByLastLetter(["Lannister", "Stark", "Greyjoy", "Targaryen"])
     ).toEqual(["Stark", "Targaryen", "Lannister", "Greyjoy"]);
