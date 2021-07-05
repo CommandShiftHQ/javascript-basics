@@ -16,7 +16,7 @@ const roundDown = a => Math.floor(a);
 
 const absolute = a => Math.abs(a);
 
-const quotient = (a, b) => Math.floor(a / b);
+const quotient = (a, b) => Math.trunc(a / b);
 
 const remainder = (a, b) => a % b;
 

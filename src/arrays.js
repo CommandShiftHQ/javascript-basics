@@ -1,62 +1,50 @@
 const getNthElement = (index, array) => {
-  // your code here
+  return array[index % array.length];
 };
 
-const arrayToCSVString = array => {
-  // your code here
-};
+const arrayToCSVString = array => array.toString();
 
-const csvStringToArray = string => {
-  // your code here
-};
+const csvStringToArray = string => string.split(",");
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
-const addToArray2 = (element, array) => {
-  // your code here
-};
+const addToArray2 = (element, array) => array.concat(element);
 
-const removeNthElement = (index, array) => {
-  // your code here
-};
+const removeNthElement = (index, array) => array.splice(index, 1);
 
-const numbersToStrings = numbers => {
-  // your code here
-};
+const numbersToStrings = numbers => numbers.map(String);
 
-const uppercaseWordsInArray = strings => {
-  // your code here
-};
+const uppercaseWordsInArray = strings => strings.map(a => a.toUpperCase());
 
-const reverseWordsInArray = strings => {
-  // your code here
-};
+const reverseWordsInArray = strings =>
+  strings.map(word => {
+    return word
+      .split("")
+      .reverse()
+      .join("");
+  });
 
-const onlyEven = numbers => {
-  // your code here
-};
+const onlyEven = numbers => numbers.filter(number => number % 2 === 0);
 
-const removeNthElement2 = (index, array) => {
-  // your code here
-};
+const removeNthElement2 = (index, array) =>
+  array.reduce((result, elem, i) => {
+    if (i !== index) result.push(elem);
+    return result;
+  }, []);
 
-const elementsStartingWithAVowel = strings => {
-  // your code here
-};
+const elementsStartingWithAVowel = strings =>
+  strings.filter(str => /^[aeiouAEIOU]/i.test(str));
 
-const removeSpaces = string => {
-  // your code here
-};
+const removeSpaces = string => string.replace(/\s/g, "");
 
-const sumNumbers = numbers => {
-  // your code here
-};
+const sumNumbers = numbers => numbers.reduce((a, b) => a + b);
 
-const sortByLastLetter = strings => {
-  // your code here
-};
+const sortByLastLetter = strings =>
+  strings.sort(
+    (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
+  );
 
 module.exports = {
   getNthElement,

@@ -1,16 +1,18 @@
 const negate = a => !a;
 
-const both = (a, b) => a && b === true;
+const both = (a, b) => a && b;
 
-const either = (a, b) => a || b === true;
+const either = (a, b) => a || b;
 
-const none = (a, b) => !(a && b === true);
+const none = (a, b) => !a && !b;
 
-const one = (a, b) => !a || b === true;
-
-const truthiness = a => {
-  // your code here
+const one = (a, b) => {
+  if (a && !b) return true;
+  if (!a && b) return true;
+  return false;
 };
+
+const truthiness = a => Boolean(a);
 
 const isEqual = (a, b) => a === b;
 
@@ -18,23 +20,17 @@ const isGreaterThan = (a, b) => a > b;
 
 const isLessThanOrEqualTo = (a, b) => a <= b;
 
-const isOdd = a => a +1;
+const isOdd = a => !(a % 2 === 0);
 
-const isEven = a => {
-  // your code here
-};
+const isEven = a => a % 2 === 0;
 
 const isSquare = a => Math.sqrt(a) % 1 === 0;
 
-const startsWith = (char, string) => {
-  // your code here
-};
+const startsWith = (char, string) => string.startsWith(char);
 
-const containsVowels = string => {
-  // your code here
-};
+const containsVowels = string => Boolean(string.match(/[aeiou]/gi));
 
-const isLowerCase = string => string.typeof()
+const isLowerCase = string => string === string.toLowerCase();
 
 module.exports = {
   negate,

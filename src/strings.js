@@ -8,7 +8,7 @@ const countCharacters = string => string.length;
 
 const firstCharacter = string => string.charAt(0);
 
-const firstCharacters = string => string.substring(0,);
+const firstCharacters = (string, n) => string.substring(0, n);
 
 module.exports = {
   sayHello,

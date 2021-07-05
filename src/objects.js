@@ -1,41 +1,39 @@
 const createPerson = (name, age) => {
-  // your code here
+  return {
+    name,
+    age
+  };
 };
 
-const getName = object => {
-  // your code here
-};
+const getName = object => object.name;
 
-const getProperty = (property, object) => {
-  // your code here
-};
+const getProperty = (property, object) => object[property];
 
-const hasProperty = (property, object) => {
-  // your code here
-};
+const hasProperty = (property, object) => property in object;
 
-const isOver65 = person => {
-  // your code here
-};
+const isOver65 = person => person.age > 65;
 
-const getAges = people => {
-  // your code here
-};
+const getAges = people => people.map(person => person.age);
 
-const findByName = (name, people) => {
-  // your code here
-};
+const findByName = (name, people) =>
+  people.filter(person => person.name === name)[0];
 
-const findHondas = cars => {
-  // your code here
-};
+const findHondas = cars => cars.filter(car => car.manufacturer === "Honda");
 
 const averageAge = people => {
-  // your code here
+  const ages = people.map(person => person.age);
+  const average = ages.reduce((a, b) => a + b);
+  return average / ages.length;
 };
 
 const createTalkingPerson = (name, age) => {
-  // your code here
+  const person = {
+    name,
+    age,
+    introduce: personname =>
+      `Hi ${personname}, my name is ${name} and I am ${age}!`
+  };
+  return person;
 };
 
 module.exports = {
