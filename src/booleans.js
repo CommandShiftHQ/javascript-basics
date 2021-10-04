@@ -1,60 +1,60 @@
-const negate = a => {
+function negate(a) {
   // your code here
 };
 
-const both = (a, b) => {
+function both(a, b) {
   // your code here
 };
 
-const either = (a, b) => {
+function either(a, b) {
   // your code here
 };
 
-const none = (a, b) => {
+function none(a, b) {
   // your code here
 };
 
-const one = (a, b) => {
+function one(a, b) {
   // your code here
 };
 
-const truthiness = a => {
+function truthiness(a) {
   // your code here
 };
 
-const isEqual = (a, b) => {
+function isEqual(a, b) {
   // your code here
 };
 
-const isGreaterThan = (a, b) => {
+function isGreaterThan(a, b) {
   // your code here
 };
 
-const isLessThanOrEqualTo = (a, b) => {
+function isLessThanOrEqualTo(a, b) {
   // your code here
 };
 
-const isOdd = a => {
+function isOdd(a) {
   // your code here
 };
 
-const isEven = a => {
+function isEven(a) {
   // your code here
 };
 
-const isSquare = a => {
+function isSquare(a) {
   // your code here
 };
 
-const startsWith = (char, string) => {
+function startsWith(char, string) {
   // your code here
 };
 
-const containsVowels = string => {
+function containsVowels(string) {
   // your code here
 };
 
-const isLowerCase = string => {
+function isLowerCase(string) {
   // your code here
 };
 
