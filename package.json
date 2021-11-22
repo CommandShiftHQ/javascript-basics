@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/MCRcodes/javascript-basics#readme",
   "devDependencies": {
-    "eslint": "^6.5.1",
+    "eslint": "^8.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
