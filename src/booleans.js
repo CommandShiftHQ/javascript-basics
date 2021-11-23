@@ -1,9 +1,10 @@
+/* eslint-disable no-unreachable */
 function negate(a) {
   return !a;
 };
 
 function both(a, b) {
-  return (a && b);
+  return a && b;
 };
 
 function either(a, b) {
@@ -62,7 +63,16 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  // your code here
+  let string2 = string.toLowerCase();
+  let value = false
+  for (let i=0; i<string2.length; i++) {
+    if (string2[i] === "a" || string2[i] === "e" ||
+    string2[i] === "i" || string2[i] === "o" || string2[i] === "u") {
+      value = true;
+    } 
+    
+  }
+  return value;
 };
 
 function isLowerCase(string) {
