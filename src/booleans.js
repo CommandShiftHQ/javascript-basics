@@ -15,7 +15,9 @@ function none(a, b) {
 };
 
 function one(a, b) {
-  // your code here
+  if ((a === true && b === false) || (a === false && b === true)) {
+    return true;
+  } else return false;
 };
 
 function truthiness(a) {
@@ -35,23 +37,28 @@ function isLessThanOrEqualTo(a, b) {
 };
 
 function isOdd(a) {
-  if (a%2 !== 0){
+  if (a%2 !== 0) {
   return true;
-  }
+  } else return false;
 };
 
 function isEven(a) {
   if (a%2 === 0) {
   return true;
-  }
+  } else return false;
 };
 
 function isSquare(a) {
-  // your code here
+  if (Number.isInteger(Math.sqrt(a))){
+    return true;
+  } else return false;
+
 };
 
 function startsWith(char, string) {
-  // your code here
+  if (string[0] === char){
+    return true;
+  } else return false;
 };
 
 function containsVowels(string) {
