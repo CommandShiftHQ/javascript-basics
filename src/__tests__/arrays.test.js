@@ -19,34 +19,34 @@ const {
 describe('getNthElement', () => {
   const array = ['cat', 'dog', 'elephant', 'fox'];
 
-  xit('returns the element at the given position', () => {
+  it('returns the element at the given position', () => {
     expect(getNthElement(0, array)).toEqual('cat');
     expect(getNthElement(2, array)).toEqual('elephant');
     expect(getNthElement(3, array)).toEqual('fox');
   });
 
-  xit('if n is greater than the number of elements, it cycles back to the start', () => {
+  it('if n is greater than the number of elements, it cycles back to the start', () => {
     expect(getNthElement(4, array)).toEqual('cat');
     expect(getNthElement(5, array)).toEqual('dog');
   });
 });
 
 describe('arrayToCSVString', () => {
-  xit('returns the array elements as a comma-seperated string', () => {
+  it('returns the array elements as a comma-seperated string', () => {
     expect(arrayToCSVString(['a', 'b', 'c', 'd'])).toEqual('a,b,c,d');
     expect(arrayToCSVString([1, 2, 3, 4, 5])).toEqual('1,2,3,4,5');
   });
 });
 
 describe('csvStringToArray', () => {
-  xit('converts the csv string as an array', () => {
+  it('converts the csv string as an array', () => {
     expect(csvStringToArray('a,b,c,d')).toEqual(['a', 'b', 'c', 'd']);
     expect(csvStringToArray('1,2,3,4,5')).toEqual(['1', '2', '3', '4', '5']);
   });
 });
 
 describe('addToArray', () => {
-  xit('adds the item to the end of the array', () => {
+  it('adds the item to the end of the array', () => {
     const array = [];
     const array2 = [1, 2, 3];
 
