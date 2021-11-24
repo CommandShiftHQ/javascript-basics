@@ -23,11 +23,11 @@ function round(a) {
 }
 
 function roundUp(a) {
-  return round(a);
+  return Math.ceil(a);
 }
 
 function roundDown(a) {
-  return floor(a);
+  return Math.floor(a);
 }
 
 function absolute(a) {
