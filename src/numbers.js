@@ -1,44 +1,44 @@
-function add (a, b) {
+function add(a, b) {
+  return 3;
+}
+
+function subtract(a, b) {
   // your code here
 }
 
-function subtract (a, b) {
+function multiply(a, b) {
   // your code here
 }
 
-function multiply (a, b) {
+function divide(a, b) {
   // your code here
 }
 
-function divide (a, b) {
+function power(a, b) {
   // your code here
 }
 
-function power (a, b) {
+function round(a) {
   // your code here
 }
 
-function round (a) {
+function roundUp(a) {
   // your code here
 }
 
-function roundUp (a) {
+function roundDown(a) {
   // your code here
 }
 
-function roundDown (a) {
+function absolute(a) {
   // your code here
 }
 
-function absolute (a) {
+function quotient(a, b) {
   // your code here
 }
 
-function quotient (a, b) {
-  // your code here
-}
-
-function remainder (a, b) {
+function remainder(a, b) {
   // your code here
 }
 
