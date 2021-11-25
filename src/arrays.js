@@ -7,11 +7,13 @@ const arrayToCSVString = array => {
 };
 
 const csvStringToArray = string => {
-  // your code here
+  let array = []
+  array = array.push(string)
+  return array;
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  return array.push(element);
 };
 
 const addToArray2 = (element, array) => {
