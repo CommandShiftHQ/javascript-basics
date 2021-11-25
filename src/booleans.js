@@ -43,10 +43,10 @@ function one(a, b) {
 
 
 function truthiness(a) {
-  if (a === true) {
-    return true;
-  } else {
+  if (a === undefined) {
     return false;
+  } else {
+    return true;
   }
 };
 
