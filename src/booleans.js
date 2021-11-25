@@ -1,45 +1,94 @@
 function negate(a) {
-  // your code here
+  if (a === true) {
+    return false;
+  } else if (a === false) {
+    return true;
+  }
 };
 
 function both(a, b) {
-  // your code here
+  if (a === true && b === true) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function either(a, b) {
-  // your code here
+  if (a === true || b === true) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function none(a, b) {
-  // your code here
+  if (a !=== true && b !=== true) {
+    return true;
+  } else {
+    return false;
+  }
 };
+
 
 function one(a, b) {
-  // your code here
+  if (a === true && b !=== true ) {
+    return true;
+  } else if (b === true && a !=== true ) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
+
 function truthiness(a) {
-  // your code here
+  if (a !=== true ) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isEqual(a, b) {
-  // your code here
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isGreaterThan(a, b) {
-  // your code here
+  if (a > b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  if (a <= b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isOdd(a) {
-  // your code here
+  if (a % 2 = 0) {
+    return false;
+  } else {
+    return true;
+  }
 };
 
+
 function isEven(a) {
-  // your code here
+  if (a % 2 = 0) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isSquare(a) {
@@ -47,7 +96,11 @@ function isSquare(a) {
 };
 
 function startsWith(char, string) {
-  // your code here
+  if (string.startsWith(char)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function containsVowels(string) {
@@ -55,7 +108,11 @@ function containsVowels(string) {
 };
 
 function isLowerCase(string) {
-  // your code here
+  if (string.isLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 module.exports = {
