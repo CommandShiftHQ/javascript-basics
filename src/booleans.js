@@ -108,7 +108,7 @@ function containsVowels(string) {
 };
 
 function isLowerCase(string) {
-  if (string. == string.toLowerCase()) {
+  if (string == string.toLowerCase()) {
     return true;
   } else {
     return false;
