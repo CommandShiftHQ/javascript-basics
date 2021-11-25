@@ -75,7 +75,8 @@ function isLessThanOrEqualTo(a, b) {
 };
 
 function isOdd(a) {
-  if (a % 2 = 0) {
+  let b = 2;
+  if (a % b == 0) {
     return false;
   } else {
     return true;
@@ -84,10 +85,8 @@ function isOdd(a) {
 
 
 function isEven(a) {
-  if (a % 2 = 0) {
+  if (a % 2 == 0) {
     return true;
-  } else {
-    return false;
   }
 };
 
