@@ -84,7 +84,7 @@ function isOdd(a) {
 
 
 function isEven(a) {
-  f(a % 2 == 0) {
+  if (a % 2 == 0) {
     return true;
   } else {
     return false;
