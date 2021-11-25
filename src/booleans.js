@@ -44,9 +44,9 @@ function one(a, b) {
 
 function truthiness(a) {
   if (a !== true) {
-    return true;
-  } else {
     return false;
+  } else {
+    return true;
   }
 };
 
@@ -75,18 +75,19 @@ function isLessThanOrEqualTo(a, b) {
 };
 
 function isOdd(a) {
-  let b = 2;
-  if (a % b == 0) {
-    return false;
-  } else {
+  if (a % 2 !== 0) {
     return true;
+  } else {
+    return false;
   }
 };
 
 
 function isEven(a) {
-  if (a % 2 == 0) {
+  f(a % 2 == 0) {
     return true;
+  } else {
+    return false;
   }
 };
 
@@ -107,7 +108,7 @@ function containsVowels(string) {
 };
 
 function isLowerCase(string) {
-  if (string.isLowerCase()) {
+  if (string. == string.toLowerCase()) {
     return true;
   } else {
     return false;
