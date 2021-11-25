@@ -32,7 +32,7 @@ function none(a, b) {
 
 
 function one(a, b) {
-  if (a === true && b !=== true ) {
+  if (a === true && b !== true) {
     return true;
   } else if (b === true && a !=== true ) {
     return true;
