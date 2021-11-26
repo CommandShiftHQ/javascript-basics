@@ -64,7 +64,6 @@ function startsWith(char, string) {
 
 function containsVowels(string) {
   let string2 = string.toLowerCase();
-  console.log(string2);
   let value = false
   for (let i=0; i<string2.length; i++) {
     if (string2[i] === "a" || string2[i] === "e" ||

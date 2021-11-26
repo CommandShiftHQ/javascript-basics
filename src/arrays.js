@@ -1,9 +1,17 @@
+
 const getNthElement = (index, array) => {
-  // your code here
+  return array[index%array.length];
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  let newArray = '';
+  for (let i = 0; i<array.length; i++){
+    newArray += array[i];
+    if (i<(array.length -1)){
+      newArray += ",";
+    }
+  }
+  return newArray;
 };
 
 const csvStringToArray = string => {
@@ -11,43 +19,88 @@ const csvStringToArray = string => {
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
-};
+  const newArray = array;
+  let x = newArray.push(element);
+}
 
 const removeNthElement = (index, array) => {
-  // your code here
+  let array2=array.splice(index, 1);
+
+
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  for (let i = 0; i < numbers.length; i++) {
+    numbers[i] = numbers[i].toString();
+  }
+  return numbers;
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  for (let i = 0; i <strings.length; i++) {
+    strings[i] = strings[i].toUpperCase();
+  }
+  return strings;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  let reverseArray =[];
+  for (i = 0; i < strings.length; i++) {
+    let reverseString = '';
+    let word = strings[i];
+    for (j = word.length - 1; j >= 0; j--) {
+       reverseString += word[j];
+    }
+    reverseArray.push(reverseString);
+  }
+  return reverseArray;
 };
 
 const onlyEven = numbers => {
-  // your code here
+  console.log(numbers);
+  let newArray=[];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i]%2 === 0) {
+      console.log(i, numbers[i]);
+      newArray.push(numbers[i]);
+    };
+  }
+  console.log(newArray);
+  return newArray;
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  let newArray = array.slice(index);
+  console.log(array, newArray);
+  return array;
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  let newArray = [];
+  for (let i = 0; i< strings.length; i++) {
+    let x = strings[i].toLowerCase();
+    if (x.startsWith('a') || (x.startsWith('e')) || (x.startsWith('i')) ||
+     (x.startsWith('o')) || (x.startsWith('u'))) {
+       newArray.push(strings[i]);
+     }
+     
+  };
+  return newArray;
 };
 
+
 const removeSpaces = string => {
-  // your code here
+  let newString = '';
+  for (let i = 0; i <string.length; i++){
+    if (string[i] !== ' '){
+      newString += (string[i]);
+    };
+  }
+  return newString;
 };
 
 const sumNumbers = numbers => {
