@@ -24,7 +24,7 @@ describe('negate', () => {
 });
 
 describe('both', () => {
-  xit('returns true if both of the given values are true', () => {
+  xit('returns true if both of the given booleans are true', () => {
     expect(both(true, true)).toBe(true);
     expect(both(true, false)).toBe(false);
     expect(both(false, true)).toBe(false);
@@ -33,7 +33,7 @@ describe('both', () => {
 });
 
 describe('either', () => {
-  xit('returns true if at least one of the given values are true', () => {
+  xit('returns true if at least one of the given booleans are true', () => {
     expect(either(true, true)).toBe(true);
     expect(either(true, false)).toBe(true);
     expect(either(false, true)).toBe(true);
@@ -42,7 +42,7 @@ describe('either', () => {
 });
 
 describe('none', () => {
-  xit('returns true if neither of the given values are true', () => {
+  xit('returns true if neither of the given booleans are true', () => {
     expect(none(true, true)).toBe(false);
     expect(none(true, false)).toBe(false);
     expect(none(false, true)).toBe(false);
@@ -51,7 +51,7 @@ describe('none', () => {
 });
 
 describe('one', () => {
-  xit('returns true if exactly one of the given values are true', () => {
+  xit('returns true if exactly one of the given booleans are true', () => {
     expect(one(true, true)).toBe(false);
     expect(one(true, false)).toBe(true);
     expect(one(false, true)).toBe(true);
@@ -81,6 +81,7 @@ describe('isEqual', () => {
     expect(isEqual('true', 'false')).toBe(false);
     expect(isEqual(10, 0)).toBe(false);
     expect(isEqual(10, 10)).toBe(true);
+    expect(isEqual(10, '10')).toBe(false);
   });
 });
 
@@ -89,6 +90,10 @@ describe('isGreaterThan', () => {
     expect(isGreaterThan(1, 2)).toBe(false);
     expect(isGreaterThan(3, 2)).toBe(true);
     expect(isGreaterThan(4, 4)).toBe(false);
+    expect(isGreaterThan(-3, 4)).toBe(false);
+    expect(isGreaterThan(4, -3)).toBe(true);
+    expect(isGreaterThan(0, 1)).toBe(false);
+    expect(isGreaterThan(1, 0)).toBe(true);
   });
 });
 
@@ -97,6 +102,8 @@ describe('isLessThanOrEqualTo', () => {
     expect(isLessThanOrEqualTo(1, 2)).toBe(true);
     expect(isLessThanOrEqualTo(3, 2)).toBe(false);
     expect(isLessThanOrEqualTo(4, 4)).toBe(true);
+    expect(isLessThanOrEqualTo(0, 4)).toBe(true);
+    expect(isLessThanOrEqualTo(-1, 0)).toBe(true);
   });
 });
 
@@ -121,6 +128,7 @@ describe('isEven', () => {
 describe('isSquare', () => {
   xit('returns true if the number is a square', () => {
     expect(isSquare(9)).toEqual(true);
+    expect(isSquare(4)).toEqual(true);
     expect(isSquare(5)).toEqual(false);
     expect(isSquare(-4)).toEqual(false);
     expect(isSquare(0)).toEqual(true);
