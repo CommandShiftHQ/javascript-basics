@@ -76,12 +76,17 @@ describe('removeNthElement', () => {
     const array = ['ant', 'bison', 'cockerel', 'duck', 'elephant'];
     removeNthElement(2, array);
     expect(array).toEqual(['ant', 'bison', 'duck', 'elephant']);
+    
+    const arrayTwo = ['thing 1', 'thing 2', 'thing 3', 'thing 4', 'thing 5'];
+    removeNthElement(0, arrayTwo);
+    expect(arrayTwo).toEqual(['thing 2', 'thing 3', 'thing 4', 'thing 5']]);
   });
 });
 
 describe('numbersToStrings', () => {
   xit('converts every number in the array to a string', () => {
     expect(numbersToStrings([1, 2, 3])).toEqual(['1', '2', '3']);
+    expect(numbersToStrings([7, 8, 9])).toEqual(['7', '8', '9']);
   });
 });
 
@@ -90,6 +95,11 @@ describe('uppercaseWordsInArray', () => {
     expect(uppercaseWordsInArray(['cat', 'mouse', 'banana'])).toEqual([
       'CAT',
       'MOUSE',
+      'BANANA'
+    ]);
+    expect(uppercaseWordsInArray(['romy', 'mo', 'baNana'])).toEqual([
+      'ROMY',
+      'MO',
       'BANANA'
     ]);
   });
@@ -102,12 +112,18 @@ describe('reverseWordsInArray', () => {
       'esuoM',
       'ananab'
     ]);
+    expect(reverseWordsInArray(['dog', 'cat', 'fig'])).toEqual([
+      'god',
+      'tac',
+      'gif'
+    ]);
   });
 });
 
 describe('onlyEven', () => {
   xit('filters the array and only returns even numbers', () => {
     expect(onlyEven([1, 2, 3, 4, 5, 6, 7, 8])).toEqual([2, 4, 6, 8]);
+    expect(onlyEven([8, 9, 10, 11, 12, 13, 14, 15])).toEqual([8, 10, 12, 14]);
   });
 });
 
@@ -116,6 +132,9 @@ describe('removeNthElement2', () => {
     const array = ['bike', 'car', 'train', 'bus'];
     expect(removeNthElement2(2, array)).toEqual(['bike', 'car', 'bus']);
     expect(array).toEqual(['bike', 'car', 'train', 'bus']);
+    const arrayTwo = ['cat', 'mouse', 'banana'];
+    expect(removeNthElement2(0, arrayTwo)).toEqual(['mouse', 'banana']);
+    expect(arrayTwo).toEqual(['cat', 'mouse', 'banana']);
   });
 });
 
@@ -151,6 +170,13 @@ describe('elementsStartingWithAVowel', () => {
         'zupple'
       ])
     ).toEqual(['apple', 'epple', 'ipple', 'opple', 'upple']);
+    expect(
+      elementsStartingWithAVowel([
+        'aaaa',
+        'bbbb',
+        'eeee',
+      ])
+    ).toEqual(['aaaa', 'bbbb', 'eeee']);
   });
 
   xit('is case insensitive', () => {
@@ -184,6 +210,13 @@ describe('elementsStartingWithAVowel', () => {
         'Zupple'
       ])
     ).toEqual(['Apple', 'Epple', 'Ipple', 'Opple', 'Upple']);
+     expect(
+      elementsStartingWithAVowel([
+        'Aaaa',
+        'Bbbb',
+        'Eeee',
+      ])
+    ).toEqual(['Aaaa', 'Bbbb', 'Eeee']);
   });
 });
 
@@ -201,6 +234,7 @@ describe('removeSpaces', () => {
 describe('sumNumbers', () => {
   xit('returns the sum of the numbers in the array', () => {
     expect(sumNumbers([1, 3, 5, 6, 2, 8])).toEqual(25);
+    expect(sumNumbers([1, 3, 5])).toEqual(9);
   });
 });
 
@@ -209,5 +243,8 @@ describe('sortByLastLetter', () => {
     expect(
       sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen'])
     ).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
+    expect(
+      sortByLastLetter(['Mo', 'Romy', 'Miguel', 'Martyna'])
+    ).toEqual(['Martyna', 'Miguel', 'Mo', 'Romy']);
   });
 });
