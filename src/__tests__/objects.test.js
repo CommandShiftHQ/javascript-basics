@@ -229,10 +229,10 @@ describe('createTalkingPerson', () => {
     );
 
     expect(catherine.introduce('Zoe')).toEqual(
-      'Hi Zoe, my name is Catherine and I am 20!'
+      'Hi Zoe, my name is Catherine and I am 21!'
     );
     expect(catherine.introduce('Bob')).toEqual(
-      'Hi Bob, my name is Catherine and I am 20!'
+      'Hi Bob, my name is Catherine and I am 21!'
     );
   });
 });

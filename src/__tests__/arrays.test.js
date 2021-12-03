@@ -176,7 +176,7 @@ describe('elementsStartingWithAVowel', () => {
         'bbbb',
         'eeee',
       ])
-    ).toEqual(['aaaa', 'bbbb', 'eeee']);
+    ).toEqual(['aaaa', 'eeee']);
   });
 
   xit('is case insensitive', () => {
@@ -216,7 +216,7 @@ describe('elementsStartingWithAVowel', () => {
         'Bbbb',
         'Eeee',
       ])
-    ).toEqual(['Aaaa', 'Bbbb', 'Eeee']);
+    ).toEqual(['Aaaa', 'Eeee']);
   });
 });
 
