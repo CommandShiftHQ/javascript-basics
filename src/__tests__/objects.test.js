@@ -33,6 +33,12 @@ describe('getName', () => {
         age: 79
       })
     ).toEqual('Fred');
+    expect(
+      getName({
+        name: 'Bob',
+        age: 79
+      })
+    ).toEqual('Bob');
   });
 });
 
@@ -44,6 +50,12 @@ describe('getProperty', () => {
         age: 79
       })
     ).toEqual(79);
+    expect(
+      getProperty('name', {
+        name: 'Fred',
+        age: 79
+      })
+    ).toEqual('Fred');
   });
 });
 
@@ -53,9 +65,16 @@ describe('hasProperty', () => {
     age: 79
   };
 
+  const tom = {
+    name: 'Tom',
+    age: 23
+  };
+
   xit('returns true if the object has the given property', () => {
     expect(hasProperty('age', fred)).toBe(true);
+    expect(hasProperty('name', tom)).toBe(true);
     expect(hasProperty('favouriteColour', fred)).toBe(false);
+    expect(hasProperty('arms', tom)).toBe(false);
   });
 });
 
@@ -100,6 +119,8 @@ describe('getAges', () => {
     };
 
     expect(getAges([jim, dilys, marjorie])).toEqual([66, 50, 65]);
+    expect(getAges([dilys, marjorie])).toEqual([50, 65]);
+    expect(getAges([jim, marjorie])).toEqual([66, 65]);
   });
 });
 
@@ -152,6 +173,8 @@ describe('findHondas', () => {
     };
 
     expect(findHondas([car1, car2, car3, car4])).toEqual([car1, car4]);
+    expect(findHondas([car1, car2, car3])).toEqual([car1]);
+    expect(findHondas([car2, car3])).toEqual([]);
   });
 });
 
@@ -172,21 +195,44 @@ describe('averageAge', () => {
       age: 25
     };
 
+    const james = {
+      name: 'James',
+      age: 10
+    };
+
     expect(averageAge([john, eric, gary])).toBe(45);
+    expect(averageAge([john, eric])).toBe(55);
+    expect(averageAge([james, eric])).toBe(30);
   });
 });
 
 describe('createTalkingPerson', () => {
   xit('returns a person who can introduce themselves', () => {
     const bill = createTalkingPerson('Bill', 40);
+    const catherine = createTalkingPerson('Catherine', 21);
     expect(bill).toEqual({
       name: 'Bill',
       age: 40,
       introduce: expect.any(Function)
     });
+    expect(catherine).toEqual({
+      name: 'Catherine',
+      age: 21,
+      introduce: expect.any(Function)
+    });
 
     expect(bill.introduce('Fred')).toEqual(
       'Hi Fred, my name is Bill and I am 40!'
+    );
+    expect(bill.introduce('Penny')).toEqual(
+      'Hi Penny, my name is Bill and I am 40!'
+    );
+
+    expect(catherine.introduce('Zoe')).toEqual(
+      'Hi Zoe, my name is Catherine and I am 20!'
+    );
+    expect(catherine.introduce('Bob')).toEqual(
+      'Hi Bob, my name is Catherine and I am 20!'
     );
   });
 });
