@@ -79,7 +79,7 @@ describe('removeNthElement', () => {
     
     const arrayTwo = ['thing 1', 'thing 2', 'thing 3', 'thing 4', 'thing 5'];
     removeNthElement(0, arrayTwo);
-    expect(arrayTwo).toEqual(['thing 2', 'thing 3', 'thing 4', 'thing 5']]);
+    expect(arrayTwo).toEqual(['thing 2', 'thing 3', 'thing 4', 'thing 5']);
   });
 });
 
