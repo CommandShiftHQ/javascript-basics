@@ -63,6 +63,14 @@ const elementsStartingWithAVowel = strings => {
 
 const removeSpaces = string => {
   // your code here
+  return [...string]
+    .reduce((acc, curr) => {
+      if (curr !== ' ') {
+        acc.push(curr);
+      }
+      return acc;
+    }, [])
+    .join('');
 };
 
 const sumNumbers = numbers => {
