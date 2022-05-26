@@ -84,7 +84,7 @@ describe('removeNthElement', () => {
 });
 
 describe('numbersToStrings', () => {
-  xit('converts every number in the array to a string', () => {
+  it('converts every number in the array to a string', () => {
     expect(numbersToStrings([1, 2, 3])).toEqual(['1', '2', '3']);
     expect(numbersToStrings([7, 8, 9])).toEqual(['7', '8', '9']);
   });
