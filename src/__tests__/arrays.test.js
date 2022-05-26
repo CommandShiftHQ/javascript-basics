@@ -91,7 +91,7 @@ describe('numbersToStrings', () => {
 });
 
 describe('uppercaseWordsInArray', () => {
-  xit('makes every string in the array uppercase', () => {
+  it('makes every string in the array uppercase', () => {
     expect(uppercaseWordsInArray(['cat', 'mouse', 'banana'])).toEqual([
       'CAT',
       'MOUSE',
