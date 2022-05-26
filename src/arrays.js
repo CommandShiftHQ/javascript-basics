@@ -57,6 +57,8 @@ const removeNthElement2 = (index, array) => {
 
 const elementsStartingWithAVowel = strings => {
   // your code here
+  const regex = new RegExp('^[aeiou]', 'i');
+  return strings.filter(string => regex.test(string));
 };
 
 const removeSpaces = string => {
