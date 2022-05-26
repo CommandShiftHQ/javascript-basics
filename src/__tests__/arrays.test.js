@@ -226,7 +226,7 @@ describe('removeSpaces', () => {
 });
 
 describe('sumNumbers', () => {
-  xit('returns the sum of the numbers in the array', () => {
+  it('returns the sum of the numbers in the array', () => {
     expect(sumNumbers([1, 3, 5, 6, 2, 8])).toEqual(25);
     expect(sumNumbers([1, 3, 5])).toEqual(9);
   });
