@@ -39,7 +39,7 @@ describe('arrayToCSVString', () => {
 });
 
 describe('csvStringToArray', () => {
-  xit('converts the csv string as an array', () => {
+  it('converts the csv string as an array', () => {
     expect(csvStringToArray('a,b,c,d')).toEqual(['a', 'b', 'c', 'd']);
     expect(csvStringToArray('1,2,3,4,5')).toEqual(['1', '2', '3', '4', '5']);
   });
