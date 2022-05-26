@@ -72,7 +72,7 @@ describe('addToArray2', () => {
 });
 
 describe('removeNthElement', () => {
-  xit('removes the element at position n', () => {
+  it('removes the element at position n', () => {
     const array = ['ant', 'bison', 'cockerel', 'duck', 'elephant'];
     removeNthElement(2, array);
     expect(array).toEqual(['ant', 'bison', 'duck', 'elephant']);
