@@ -80,6 +80,9 @@ const sumNumbers = numbers => {
 
 const sortByLastLetter = strings => {
   // your code here
+  return strings.sort((stringA, stringB) =>
+    stringA.at(-1).localeCompare(stringB.at(-1))
+  );
 };
 
 module.exports = {
