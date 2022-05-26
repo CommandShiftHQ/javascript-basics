@@ -233,7 +233,7 @@ describe('sumNumbers', () => {
 });
 
 describe('sortByLastLetter', () => {
-  xit('sorts the string by the last character', () => {
+  it('sorts the string by the last character', () => {
     expect(
       sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen'])
     ).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
