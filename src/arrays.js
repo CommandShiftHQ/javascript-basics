@@ -20,6 +20,7 @@ const addToArray = (element, array) => {
 
 const addToArray2 = (element, array) => {
   // your code here
+  return [...array, element];
 };
 
 const removeNthElement = (index, array) => {
