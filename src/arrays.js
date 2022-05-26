@@ -50,6 +50,9 @@ const onlyEven = numbers => {
 
 const removeNthElement2 = (index, array) => {
   // your code here
+  const copyArray = [...array];
+  copyArray.splice(index, 1);
+  return copyArray;
 };
 
 const elementsStartingWithAVowel = strings => {
