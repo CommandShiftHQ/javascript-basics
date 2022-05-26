@@ -30,6 +30,7 @@ const removeNthElement = (index, array) => {
 
 const numbersToStrings = numbers => {
   // your code here
+  return numbers.map(number => `${number}`)
 };
 
 const uppercaseWordsInArray = strings => {
