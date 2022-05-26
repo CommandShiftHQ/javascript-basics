@@ -30,7 +30,7 @@ const removeNthElement = (index, array) => {
 
 const numbersToStrings = numbers => {
   // your code here
-  return numbers.map(number => `${number}`)
+  return numbers.map(number => `${number}`);
 };
 
 const uppercaseWordsInArray = strings => {
@@ -40,6 +40,7 @@ const uppercaseWordsInArray = strings => {
 
 const reverseWordsInArray = strings => {
   // your code here
+  return strings.map(string => [...string].reverse().join(''));
 };
 
 const onlyEven = numbers => {

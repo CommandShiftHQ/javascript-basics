@@ -106,7 +106,7 @@ describe('uppercaseWordsInArray', () => {
 });
 
 describe('reverseWordsInArray', () => {
-  xit('reverses every string in an array', () => {
+  it('reverses every string in an array', () => {
     expect(reverseWordsInArray(['cat', 'Mouse', 'banana'])).toEqual([
       'tac',
       'esuoM',
