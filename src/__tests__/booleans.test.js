@@ -17,7 +17,7 @@ const {
 } = require('../booleans');
 
 describe('negate', () => {
-  xit('returns the opposite of the passed boolean value', () => {
+  it('returns the opposite of the passed boolean value', () => {
     expect(negate(true)).toBe(false);
     expect(negate(false)).toBe(true);
   });
