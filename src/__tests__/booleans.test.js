@@ -154,7 +154,7 @@ describe('containsVowels', () => {
 });
 
 describe('isLowerCase', () => {
-  xit('it returns true if the given string is lowercase', () => {
+  it('it returns true if the given string is lowercase', () => {
     expect(isLowerCase('abc')).toBe(true);
     expect(isLowerCase('abc213')).toBe(true);
     expect(isLowerCase('Abc')).toBe(false);
