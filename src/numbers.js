@@ -27,7 +27,7 @@ function roundUp (a) {
 }
 
 function roundDown (a) {
-  // your code here
+  return Math.floor(a);
 }
 
 function absolute (a) {
