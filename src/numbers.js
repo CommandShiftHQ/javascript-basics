@@ -39,7 +39,7 @@ function quotient (a, b) {
 }
 
 function remainder (a, b) {
-  // your code here
+  return a % b;
 }
 
 module.exports = {
