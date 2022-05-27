@@ -33,7 +33,7 @@ describe('both', () => {
 });
 
 describe('either', () => {
-  xit('returns true if at least one of the given booleans are true', () => {
+  it('returns true if at least one of the given booleans are true', () => {
     expect(either(true, true)).toBe(true);
     expect(either(true, false)).toBe(true);
     expect(either(false, true)).toBe(true);
