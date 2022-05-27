@@ -102,7 +102,7 @@ describe('quotient', () => {
 });
 
 describe('remainder', () => {
-  xit('returns the remainder when dividing the first number by the second number', () => {
+  it('returns the remainder when dividing the first number by the second number', () => {
     expect(remainder(10, 3)).toEqual(1);
     expect(remainder(18, 7)).toEqual(4);
     expect(remainder(77, 10)).toEqual(7);
