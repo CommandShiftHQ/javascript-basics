@@ -179,7 +179,7 @@ describe('findHondas', () => {
 });
 
 describe('averageAge', () => {
-  xit('returns the average age of the people in the list', () => {
+  it('returns the average age of the people in the list', () => {
     const john = {
       name: 'John',
       age: 60
