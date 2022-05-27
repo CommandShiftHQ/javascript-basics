@@ -31,7 +31,7 @@ function roundDown (a) {
 }
 
 function absolute (a) {
-  // your code here
+  return Math.abs(a);
 }
 
 function quotient (a, b) {
