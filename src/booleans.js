@@ -3,7 +3,7 @@ function negate(a) {
 };
 
 function both(a, b) {
-  // your code here
+  return a && b;
 };
 
 function either(a, b) {
