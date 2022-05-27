@@ -3,7 +3,7 @@ const createPerson = (name, age) => {
 };
 
 const getName = object => {
-  // your code here
+  return object.name;
 };
 
 const getProperty = (property, object) => {
