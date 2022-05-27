@@ -51,7 +51,8 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  // your code here
+  const vowelRegex = /[aeiou]/gi;
+  return vowelRegex.test(string);
 };
 
 function isLowerCase(string) {
