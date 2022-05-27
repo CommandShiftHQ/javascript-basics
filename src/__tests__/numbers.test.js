@@ -49,7 +49,7 @@ describe('divide', () => {
 });
 
 describe('power', () => {
-  xit('returns the first number to the power of the second', () => {
+  it('returns the first number to the power of the second', () => {
     expect(power(5, 2)).toEqual(25);
     expect(power(2, 3)).toEqual(8);
     expect(power(10, 5)).toEqual(100000);
