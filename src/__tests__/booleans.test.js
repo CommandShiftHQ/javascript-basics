@@ -98,7 +98,7 @@ describe('isGreaterThan', () => {
 });
 
 describe('isLessThanOrEqualTo', () => {
-  xit('returns true if the first number is less than or equal to the second', () => {
+  it('returns true if the first number is less than or equal to the second', () => {
     expect(isLessThanOrEqualTo(1, 2)).toBe(true);
     expect(isLessThanOrEqualTo(3, 2)).toBe(false);
     expect(isLessThanOrEqualTo(4, 4)).toBe(true);
