@@ -31,7 +31,7 @@ function isGreaterThan(a, b) {
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  return a <= b;
 };
 
 function isOdd(a) {
