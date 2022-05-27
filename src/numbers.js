@@ -35,7 +35,7 @@ function absolute (a) {
 }
 
 function quotient (a, b) {
-  // your code here
+  return parseInt(a / b);
 }
 
 function remainder (a, b) {
