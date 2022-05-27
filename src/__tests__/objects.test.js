@@ -147,7 +147,7 @@ describe('findByName', () => {
 });
 
 describe('findHondas', () => {
-  xit('returns a list of cars manufactured by Honda', () => {
+  it('returns a list of cars manufactured by Honda', () => {
     const car1 = {
       manufacturer: 'Honda',
       year: 1997,
