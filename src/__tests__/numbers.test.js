@@ -22,7 +22,7 @@ describe('add', () => {
 });
 
 describe('subtract', () => {
-  xit('subtracts the second number from the first', () => {
+  it('subtracts the second number from the first', () => {
     expect(subtract(2, 1)).toEqual(1);
     expect(subtract(1, 2)).toEqual(-1);
     expect(subtract(-2, 1)).toEqual(-3);
