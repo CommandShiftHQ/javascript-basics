@@ -35,7 +35,11 @@ const averageAge = people => {
 };
 
 const createTalkingPerson = (name, age) => {
-  // your code here
+  return {
+    name, 
+    age, 
+    introduce: otherName => `Hi ${otherName}, my name is ${name} and I am ${age}!`
+  }
 };
 
 module.exports = {
