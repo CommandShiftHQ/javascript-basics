@@ -32,7 +32,7 @@ describe('subtract', () => {
 });
 
 describe('multiply', () => {
-  xit('multiplies the two numbers together', () => {
+  it('multiplies the two numbers together', () => {
     expect(multiply(10, 3)).toEqual(30);
     expect(multiply(-11, 5)).toEqual(-55);
     expect(multiply(-4, -9)).toEqual(36);
