@@ -11,7 +11,7 @@ function multiply (a, b) {
 }
 
 function divide (a, b) {
-  // your code here
+  return a / b;
 }
 
 function power (a, b) {
