@@ -40,7 +40,7 @@ describe('multiply', () => {
 });
 
 describe('divide', () => {
-  xit('divides the first number by the second number', () => {
+  it('divides the first number by the second number', () => {
     expect(divide(20, 5)).toEqual(4);
     expect(divide(5, 2)).toEqual(2.5);
     expect(divide(2, 5)).toEqual(0.4);
