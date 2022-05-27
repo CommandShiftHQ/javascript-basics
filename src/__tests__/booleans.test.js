@@ -51,7 +51,7 @@ describe('none', () => {
 });
 
 describe('one', () => {
-  xit('returns true if exactly one of the given booleans are true', () => {
+  it('returns true if exactly one of the given booleans are true', () => {
     expect(one(true, true)).toBe(false);
     expect(one(true, false)).toBe(true);
     expect(one(false, true)).toBe(true);
