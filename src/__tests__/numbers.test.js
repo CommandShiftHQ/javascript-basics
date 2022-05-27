@@ -65,7 +65,7 @@ describe('round', () => {
 });
 
 describe('roundUp', () => {
-  xit('rounds the number up to the nearest integer', () => {
+  it('rounds the number up to the nearest integer', () => {
     expect(roundUp(2.1)).toEqual(3);
     expect(roundUp(9.7)).toEqual(10);
     expect(roundUp(5.5)).toEqual(6);
