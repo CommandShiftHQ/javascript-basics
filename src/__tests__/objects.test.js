@@ -12,7 +12,7 @@ const {
 } = require('../objects');
 
 describe('createPerson', () => {
-  xit('creates an object with the given name and age properties', () => {
+  it('creates an object with the given name and age properties', () => {
     expect(createPerson('Fred', 79)).toEqual({
       name: 'Fred',
       age: 79
