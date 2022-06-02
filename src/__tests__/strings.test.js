@@ -8,7 +8,7 @@ const {
 } = require('../strings');
 
 describe('sayHello', () => {
-  xit('returns "Hello world!" when passed "world"', () => {
+  it('returns "Hello world!" when passed "world"', () => {
     expect(sayHello('world')).toEqual('Hello, world!');
   });
 
