@@ -1,5 +1,5 @@
-function sayHello(string) {
-  return 'Hello, fsghjdfkhgf!';
+function sayHello(inputString) {
+  return 'Hello, ' + inputString + '!';
 };
 
 function uppercase(string) {
@@ -13,7 +13,7 @@ function lowercase(string) {
 function countCharacters(string) {
 return string.length;
 };
-
+ 
 function firstCharacter(string) {
   return string.charAt(0);
 };
