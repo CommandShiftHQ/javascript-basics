@@ -19,8 +19,8 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
-};
+  return array.splice(index, 1);
+}
 
 const numbersToStrings = numbers => {
   // your code here
