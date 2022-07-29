@@ -1,61 +1,61 @@
 function negate(a) {
-  // your code here
+  return !a;
 };
 
 function both(a, b) {
-  // your code here
+  return a && b;
 };
 
 function either(a, b) {
-  // your code here
+  return a || b;
 };
 
 function none(a, b) {
-  // your code here
+  return !(a || b);
 };
 
 function one(a, b) {
-  // your code here
+  return Number(a) + Number(b) === 1;
 };
 
 function truthiness(a) {
-  // your code here
+  return Boolean(a);
 };
 
 function isEqual(a, b) {
-  // your code here
+  return a === b;
 };
 
 function isGreaterThan(a, b) {
-  // your code here
+  return a > b;
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  return a <= b;
 };
 
 function isOdd(a) {
-  // your code here
+  return Boolean(a % 2);
 };
 
 function isEven(a) {
-  // your code here
+  return Boolean(!(a % 2));
 };
 
 function isSquare(a) {
-  // your code here
+  return Boolean(Math.sqrt(a) % 1 === 0);
 };
 
 function startsWith(char, string) {
-  // your code here
+  return string.indexOf(char) === 0;
 };
 
 function containsVowels(string) {
-  // your code here
+  return /[aeiou]/i.test(string);
 };
 
 function isLowerCase(string) {
-  // your code here
+  return string === string.toLowerCase();
 };
 
 module.exports = {
