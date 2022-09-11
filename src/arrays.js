@@ -73,7 +73,7 @@ const elementsStartingWithAVowel = strings => {
 
 const removeSpaces = string => {
   // your code here
-  return string.replace(/ /g,'');
+  return string.replace(/ /g, '');
 };
 
 const sumNumbers = numbers => {
