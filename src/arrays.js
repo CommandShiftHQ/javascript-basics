@@ -38,30 +38,47 @@ const numbersToStrings = numbers => {
 
 const uppercaseWordsInArray = strings => {
   // your code here
+  const upper = strings.map(element => {
+    return element.toUpperCase();
+  });
+  return upper;
 };
 
 const reverseWordsInArray = strings => {
   // your code here
+  // console.log(strings);
+  // result = strings.toString();
+  // console.log(result);
 };
 
 const onlyEven = numbers => {
   // your code here
+  const even = numbers.filter(number => {
+    return number % 2 === 0;
+  });
+  return even;
 };
 
 const removeNthElement2 = (index, array) => {
   // your code here
+  // removedItem = array.splice(index, 1);
+  // console.log(array);
+  // return array;
 };
 
 const elementsStartingWithAVowel = strings => {
   // your code here
+  return strings.filter(str => /^[aeiou]/i.test(str));
 };
 
 const removeSpaces = string => {
   // your code here
+  return string.replace(/ /g,'');
 };
 
 const sumNumbers = numbers => {
   // your code here
+  return numbers.reduce((a, b) => a + b, 0);
 };
 
 const sortByLastLetter = strings => {
