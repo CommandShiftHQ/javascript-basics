@@ -34,6 +34,9 @@ const isOver65 = person => {
 
 const getAges = people => {
   // your code here
+  return people.map(person => {
+    return person.age;
+  });
 };
 
 const findByName = (name, people) => {
