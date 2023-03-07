@@ -51,7 +51,18 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  return string.includes('a') || string.includes('e') || string.includes('i') || string.includes('o') || string.includes('u') || string.includes('A') || string.includes('E') || string.includes('I') || string.includes('O') || string.includes('U');
+  return (
+    string.includes('a') ||
+    string.includes('e') ||
+    string.includes('i') ||
+    string.includes('o') ||
+    string.includes('u') ||
+    string.includes('A') ||
+    string.includes('E') ||
+    string.includes('I') ||
+    string.includes('O') ||
+    string.includes('U')
+  );
 };
 
 function isLowerCase(string) {
