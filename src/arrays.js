@@ -1,61 +1,83 @@
 const getNthElement = (index, array) => {
-  // your code here
+  index %= array.length;
+  return array[index];
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.join();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(',');
 };
 
-const addToArray = (element, array) => {
-  // your code here
-};
+function addToArray(element, array) {
+  array.push(element);
+}
 
 const addToArray2 = (element, array) => {
-  // your code here
+  const newArray = [...array, element];
+  return newArray;
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings
+  .join()
+  .toUpperCase()
+  .split(',');
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  return strings
+  .toString()
+  .split('')
+  .reverse()
+  .join('')
+  .split(',')
+  .reverse();
 };
 
 const onlyEven = numbers => {
-  // your code here
+  function even(n) {
+    return !(n % 2);
+  }
+  return numbers.filter(even);
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const firstArray = array.slice(0, index);
+  const secondArray = array.slice(index + 1, array[-1]);
+  return firstArray.concat(secondArray);
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const vowelWords = strings.filter(word => /^[aeiou]/i.test(word))
+  return vowelWords;
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.split(' ').join('');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((acc, curr) => acc + curr, 0);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  function comparingLastLetter(a, b) {
+    if (a.slice(-1) < b.slice(-1)) return -1;
+    if (a.slice(-1) > b.slice(-1)) return 1;
+    return 0;
+  }
+  return strings.sort(comparingLastLetter);
 };
 
 module.exports = {
