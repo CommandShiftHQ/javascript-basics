@@ -1,21 +1,38 @@
 function negate(a) {
-  // your code here
+  return !a
+ 
 };
 
 function both(a, b) {
-  // your code here
+   if (a===true && b===true){
+    return true;
+   } else{
+    return false;
+   }
 };
 
 function either(a, b) {
-  // your code here
+  if (a || b){
+    return true;
+  }else{
+    return false;
+  }
 };
 
 function none(a, b) {
-  // your code here
+  if (a || b){
+    return false;
+  }else{
+    return true;
+  }
 };
 
 function one(a, b) {
-  // your code here
+  if (a===true || b===true){
+    return false;
+  }else{
+    return true
+  }
 };
 
 function truthiness(a) {
