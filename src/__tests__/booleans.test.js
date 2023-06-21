@@ -60,7 +60,7 @@ describe('one', () => {
 });
 
 describe('truthiness', () => {
-  xit('returns the truthiness of the given value', () => {
+  it('returns the truthiness of the given value', () => {
     expect(truthiness('')).toBe(false);
     expect(truthiness('dbbd')).toBe(true);
     expect(truthiness(0)).toBe(false);

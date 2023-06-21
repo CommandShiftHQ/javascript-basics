@@ -28,15 +28,27 @@ function none(a, b) {
 };
 
 function one(a, b) {
-  if (a===true || b===true){
-    return false;
-  }else{
-    return true
-  }
+if (a===true && b===true) {
+  return false;
+}
+if (a!==true && b===true){
+  return true;
+}
+if (a!==true && b!==true){
+  return false;
+}
+if(a===true && b!==true){
+  return true;
+}
+
 };
 
 function truthiness(a) {
-  // your code here
+  if (true){
+    return true;
+  } else {
+    return false;
+  }
 };
 
 function isEqual(a, b) {
